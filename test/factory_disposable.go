@@ -1,0 +1,36 @@
+package test
+
+import (
+	"github.com/LearnedYet/Dungeon-Adventure-Server/domain"
+	"github.com/LearnedYet/Dungeon-Adventure-Server/util"
+	"testing"
+)
+
+func newSmallHealthPotion(t *testing.T) *domain.Disposable {
+	disposable, ok := util.JsonToObject(
+		&domain.Disposable{},
+		`{
+			"id": "xyz",
+			"type": "disposable",
+			"name": "Small Health Potion",
+			"description": "Small health potion",
+			"enhancement": [
+				{
+					"recovery": {
+						"health": 35
+					}
+				},
+				{
+					"chance": 50,
+					"duration": 5,
+					"recovery": {
+						"health": 2
+					}
+				}
+			]
+		}`)
+	if !ok {
+		t.Fatal()
+	}
+	return disposable.(*domain.Disposable)
+}
