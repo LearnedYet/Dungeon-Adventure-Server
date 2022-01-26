@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/domain"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/util"
-	"sort"
 )
 
 type Battlefield struct {
@@ -100,10 +99,4 @@ func (b *Battlefield) FilterSurvivors() {
 		}
 	}
 	b.Units = survivedUnits
-}
-
-func (b *Battlefield) SortUnitsByInitiative() {
-	sort.SliceStable(b.Units, func(i, j int) bool {
-		return b.Units[i].TotalInitiative() < b.Units[j].TotalInitiative()
-	})
 }
