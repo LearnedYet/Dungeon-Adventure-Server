@@ -3,6 +3,8 @@ package engine
 import "github.com/LearnedYet/Dungeon-Adventure-Server/domain"
 
 func (e *GameEngine) ExecuteAction(action GameAction) domain.ActionResult {
+	defer e.Unlock()
+	e.Lock()
 	switch action.Action {
 	case GameAtionUse:
 		return e.executeUseAction(action)
