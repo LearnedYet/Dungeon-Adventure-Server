@@ -4,7 +4,7 @@ import "github.com/LearnedYet/Dungeon-Adventure-Server/util"
 
 func (u *Unit) CalculateModificationChance(modification UnitModificationImpact) float32 {
 	chance := (u.TotalIntelligence() - u.State.Curse) + modification.Chance
-	return util.MaxFloat32(chance, MINIMUM_CHANCE)
+	return util.Max(chance, MINIMUM_CHANCE)
 }
 
 func (u *Unit) ApplyRecovery(recovery UnitRecovery) {
