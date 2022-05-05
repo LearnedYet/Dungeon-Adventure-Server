@@ -1,6 +1,7 @@
 package controller
 
 import (
+	"github.com/LearnedYet/Dungeon-Adventure-Server/engine"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/util"
 )
 
@@ -20,13 +21,14 @@ func (c *GameController) handleStartGameRequest(requestRaw string, response *Res
 	if request == nil {
 		return response.WithStatus(ResponseStatusMailformed)
 	}
-	room, present := c.rooms.GetByUserId(request.UserId)
-	if !present || room.Host.id != request.UserId {
+	room, ok := c.rooms.PopByHostId(request.UserId)
+	if !ok {
 		return response.WithStatus(ResponseStatusNotAllowed)
 	}
 	// todo: handle scenario
-	// scenario := NewTestScenario()
-	// actors := room.GetActors()
-	// room.engine = engine.NewGameEngine(scenario, actors)
+	scenario := NewTestScenario()
+	actors := room.GetActors()
+	engine := engine.NewGameEngine(scenario, actors)
+	c.engines.Add(engine)
 	return response.WithStatus(ResponseStatusOk)
 }
