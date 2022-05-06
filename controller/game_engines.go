@@ -1,6 +1,7 @@
 package controller
 
 import (
+	"github.com/LearnedYet/Dungeon-Adventure-Server/domain"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/engine"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/util"
 	"sync"
@@ -46,4 +47,17 @@ func (e *GameEngines) IsUserInGame(userId engine.UserId) bool {
 	e.RLock()
 	_, ok := e.userIdToEngine[userId]
 	return ok
+}
+
+func (e *GameEngines) ExecuteUserAction(action domain.Action, userId engine.UserId) (*engine.GameEvent, bool) {
+	e.RLock()
+	wrapper, ok := e.userIdToEngine[userId]
+	e.RUnlock()
+	if !ok {
+		return nil, false
+	}
+	wrapper.Lock()
+	result := wrapper.engine.ExecuteUserAction(action, userId)
+	wrapper.Unlock()
+	return result, true
 }
