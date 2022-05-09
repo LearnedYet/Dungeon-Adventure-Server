@@ -1,14 +1,10 @@
 package controller
 
-import (
-	"github.com/LearnedYet/Dungeon-Adventure-Server/engine"
-)
-
 type LobbyStatusRequest struct {
 	Request
 }
 
-func (c *GameController) handleLobbyStatusRequest(userId engine.UserId, requestRaw string, response *Response) string {
+func (c *GameController) handleLobbyStatusRequest(requestRaw string, response *Response) string {
 	request := parseRequest(&LobbyStatusRequest{}, requestRaw)
 	if request == nil {
 		return response.WithStatus(ResponseStatusMailformed)
