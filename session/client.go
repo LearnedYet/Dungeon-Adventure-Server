@@ -2,10 +2,10 @@ package session
 
 import (
 	"github.com/LearnedYet/Dungeon-Adventure-Server/engine"
-	"log"
 	"time"
 
 	"github.com/gorilla/websocket"
+	log "github.com/sirupsen/logrus"
 )
 
 type Client struct {
