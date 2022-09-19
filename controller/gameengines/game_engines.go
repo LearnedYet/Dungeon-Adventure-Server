@@ -1,4 +1,4 @@
-package controller
+package gameengines
 
 import (
 	"github.com/LearnedYet/Dungeon-Adventure-Server/domain"

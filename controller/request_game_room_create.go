@@ -1,12 +1,16 @@
 package controller
 
-import "github.com/LearnedYet/Dungeon-Adventure-Server/engine"
+import (
+	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/rooms"
+	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/users"
+	"github.com/LearnedYet/Dungeon-Adventure-Server/engine"
+)
 
 type CreateGameRoomRequest struct {
 	Request
 	Data struct {
-		Capacity   uint               `json:"capacity"`
-		ScenarioId GameRoomScenarioId `json:"scenarioId"`
+		Capacity   uint                     `json:"capacity"`
+		ScenarioId rooms.GameRoomScenarioId `json:"scenarioId"`
 	} `json:"data"`
 }
 
@@ -23,13 +27,14 @@ func (c *GameController) handleCreateGameRoomRequest(userId engine.UserId, reque
 	}
 	// todo: check available scenario
 	hostUser, _ := c.users.Get(userId)
-	room := NewGameRoom()
-	room.Capacity = request.Data.Capacity
-	room.ScenarioId = request.Data.ScenarioId
-	room.host = hostUser
+	room := rooms.NewGameRoom(
+		request.Data.Capacity,
+		request.Data.ScenarioId,
+		hostUser,
+	)
 	c.rooms.Add(room)
 	response.Data[DataKeyRoom] = room
-	c.users.ChangeUserStatus(userId, UserStatusInRoom)
+	c.users.ChangeUserStatus(userId, users.UserStatusInRoom)
 	c.broadcastLobbyStatus()
 	return response.WithStatus(ResponseStatusOk)
 }
