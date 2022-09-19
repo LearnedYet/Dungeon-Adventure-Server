@@ -1,4 +1,4 @@
-package controller
+package shop
 
 import (
 	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/users"

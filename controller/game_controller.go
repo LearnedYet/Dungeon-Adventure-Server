@@ -2,6 +2,7 @@ package controller
 
 import (
 	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/rooms"
+	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/shop"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/users"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/engine"
 )
@@ -14,7 +15,7 @@ type GameController struct {
 	users        *users.Users
 	rooms        *rooms.GameRooms
 	engines      *GameEngines
-	shop         *Shop
+	shop         *shop.Shop
 	configurator *engine.UnitConfigurator
 	broadcaster  GameControllerBroadcaster
 }
@@ -24,7 +25,7 @@ func NewGameController() *GameController {
 	c.users = users.NewUsers()
 	c.rooms = rooms.NewGameRooms()
 	c.engines = NewGameEngines()
-	c.shop = NewShop()
+	c.shop = shop.NewShop()
 	c.configurator = engine.NewUnitConfigurator()
 	c.broadcaster = c
 	return c
