@@ -1,6 +1,9 @@
 package controller
 
-import "github.com/LearnedYet/Dungeon-Adventure-Server/util"
+import (
+	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/users"
+	"github.com/LearnedYet/Dungeon-Adventure-Server/util"
+)
 
 type ResponseStatus string
 
@@ -44,11 +47,11 @@ func NewResponse() *Response {
 	return response
 }
 
-func (r *Response) fillUserStatus(user *User) {
+func (r *Response) fillUserStatus(user *users.User) {
 	r.Data[DataKeyPlayerInfo] = user.PlayerInfo
-	r.Data[DataKeyUserId] = user.id
-	r.Data[DataKeyUnit] = user.unit
-	r.Data[DataKeyStatus] = user.status.Display()
+	r.Data[DataKeyUserId] = user.Id
+	r.Data[DataKeyUnit] = user.Unit
+	r.Data[DataKeyStatus] = user.Status.Display()
 }
 
 func (r *Response) WithStatus(status ResponseStatus) string {

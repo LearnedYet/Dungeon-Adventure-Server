@@ -1,6 +1,7 @@
 package controller
 
 import (
+	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/users"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/engine"
 )
 
@@ -24,7 +25,7 @@ func (c *GameController) handleStartGameRequest(userId engine.UserId, requestRaw
 	state := engine.NewGameEvent()
 	userIds := engine.GetUserIds()
 	for _, userId := range userIds {
-		c.users.ChangeUserStatus(userId, UserStatusInGame)
+		c.users.ChangeUserStatus(userId, users.UserStatusInGame)
 	}
 	c.broadcastGameState(userIds, state)
 	c.broadcastLobbyStatus()

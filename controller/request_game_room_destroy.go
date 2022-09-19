@@ -1,6 +1,9 @@
 package controller
 
-import "github.com/LearnedYet/Dungeon-Adventure-Server/engine"
+import (
+	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/users"
+	"github.com/LearnedYet/Dungeon-Adventure-Server/engine"
+)
 
 type DestroyGameRoomRequest struct {
 	Request
@@ -20,7 +23,7 @@ func (c *GameController) handleDestroyGameRoomRequest(userId engine.UserId, requ
 	}
 	userIds := room.GetUserIds()
 	for _, userId := range userIds {
-		c.users.ChangeUserStatus(userId, UserStatusJoined)
+		c.users.ChangeUserStatus(userId, users.UserStatusJoined)
 	}
 	c.broadcastLobbyStatus()
 	c.broadcastUsersStatus(userIds)

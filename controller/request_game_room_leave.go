@@ -1,6 +1,9 @@
 package controller
 
-import "github.com/LearnedYet/Dungeon-Adventure-Server/engine"
+import (
+	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/users"
+	"github.com/LearnedYet/Dungeon-Adventure-Server/engine"
+)
 
 type LeaveGameRoomRequest struct {
 	Request
@@ -17,7 +20,7 @@ func (c *GameController) handleLeaveGameRoomRequest(userId engine.UserId, reques
 	if !c.rooms.RemoveUser(userId) {
 		return response.WithStatus(ResponseStatusFailed)
 	}
-	c.users.ChangeUserStatus(userId, UserStatusJoined)
+	c.users.ChangeUserStatus(userId, users.UserStatusJoined)
 	c.broadcastLobbyStatus()
 	return response.WithStatus(ResponseStatusOk)
 }
