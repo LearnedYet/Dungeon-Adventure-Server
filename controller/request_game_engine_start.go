@@ -1,6 +1,7 @@
 package controller
 
 import (
+	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/factory"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/users"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/engine"
 )
@@ -19,7 +20,7 @@ func (c *GameController) handleStartGameRequest(userId engine.UserId, requestRaw
 		return response.WithStatus(ResponseStatusNotAllowed)
 	}
 	// todo: handle scenario
-	scenario := NewTestScenario()
+	scenario := factory.NewTestScenario()
 	actors := room.GetActors()
 	engine := engine.NewGameEngine(scenario, actors)
 	state := engine.NewGameEvent()

@@ -1,4 +1,4 @@
-package shop
+package factory
 
 import (
 	"github.com/LearnedYet/Dungeon-Adventure-Server/domain"

@@ -1,6 +1,7 @@
 package shop
 
 import (
+	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/factory"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/users"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/domain"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/engine"
@@ -14,7 +15,7 @@ type Shop struct {
 
 func NewShop() *Shop {
 	s := &Shop{}
-	s.shop = engine.NewGameShop(NewTestShopItems())
+	s.shop = engine.NewGameShop(factory.NewTestShopItems())
 	return s
 }
 

@@ -1,4 +1,4 @@
-package controller
+package factory
 
 import (
 	"github.com/LearnedYet/Dungeon-Adventure-Server/engine"
