@@ -2,6 +2,7 @@ package engine
 
 import (
 	"fmt"
+	"github.com/LearnedYet/Dungeon-Adventure-Server/domain"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/util"
 	"sort"
 )
@@ -18,11 +19,13 @@ const (
 	GamePhaseRetreatAction      GamePhase = "retreatAction"
 	GamePhaseActionComplete     GamePhase = "actionComplete"
 	GamePhaseBattleComplete     GamePhase = "battleComplete"
+	GamePhaseDungeonComplete    GamePhase = "dungeonComplete"
 )
 
 type GameState struct {
-	ActiveUnitsQueue []uint `json:"activeUnitsQueue"`
-	InactiveUnits    []uint `json:"inactiveUnits"`
+	ActiveUnitsQueue []uint           `json:"activeUnitsQueue"`
+	InactiveUnits    []uint           `json:"inactiveUnits"`
+	Booty            domain.UnitBooty `json:"booty"`
 	phase            GamePhase
 }
 
