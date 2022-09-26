@@ -1,4 +1,4 @@
-package test
+package engine
 
 import (
 	"github.com/LearnedYet/Dungeon-Adventure-Server/engine"
