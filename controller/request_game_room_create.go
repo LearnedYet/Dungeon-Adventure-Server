@@ -1,14 +1,13 @@
 package controller
 
 import (
-	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/rooms"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/users"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/engine"
 )
 
 type CreateGameRoomRequestData struct {
-	Capacity   uint                     `json:"capacity"`
-	ScenarioId rooms.GameRoomScenarioId `json:"scenarioId"`
+	Capacity   uint                  `json:"capacity"`
+	ScenarioId engine.GameScenarioId `json:"scenarioId"`
 }
 
 func (c *GameController) handleCreateGameRoomRequest(userId engine.UserId, request *Request, response *Response) string {
