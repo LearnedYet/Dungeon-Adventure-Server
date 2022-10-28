@@ -1,7 +1,6 @@
 package engine
 
 import (
-	"fmt"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/domain"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/util"
 )
@@ -12,15 +11,6 @@ type GameEngine struct {
 	actors   []*GameUnit
 	scenario *GameScenario
 	hostId   UserId
-}
-
-func (e GameEngine) String() string {
-	return fmt.Sprintf(
-		"state: {%v}, scenario: {%v}, actors: [%s]",
-		e.state,
-		e.scenario,
-		util.AsCommaSeparatedObjectsSlice(e.actors),
-	)
 }
 
 func NewGameEngine(scenario *GameScenario, actors []*GameUnit) *GameEngine {
