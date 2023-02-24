@@ -1,6 +1,7 @@
 package auth
 
 import (
+	"github.com/LearnedYet/Dungeon-Adventure-Server/engine"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/util"
 	"time"
 
@@ -23,7 +24,7 @@ type UserCredentials struct {
 }
 
 type AuthenticationHandler interface {
-	HandleUserAuthenticated(credentials UserCredentials) bool
+	HandleUserAuthenticated(credentials UserCredentials) (engine.PlayerId, bool)
 }
 
 type Authenticator struct {
