@@ -4,6 +4,7 @@ import (
 	"flag"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/auth"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/controller"
+	"github.com/LearnedYet/Dungeon-Adventure-Server/persistance"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/session"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/util"
 	"net/http"
@@ -45,7 +46,7 @@ func authConfig() auth.AuthenticatorConfig {
 	if len(googleClientId) == 0 || len(googleClientSecret) == 0 {
 		log.Fatal("Google credentials are not specified for the environment")
 	}
-	googleRedirectUrl := util.Getenv("HOSTNAME", "http://localhost:8080") + "/google/oauth2/callback"
+	googleRedirectUrl := util.Getenv("HOST_URL", "http://localhost:8080") + "/google/oauth2/callback"
 	authRequestTimeoutSec := flag.Int64("authRequestTimeoutSec", 10, "HTTP request timeout in seconds")
 	authStateCacheTimeoutMin := flag.Int64("authStateCacheTimeoutMin", 10, "State cache timeout in minutes")
 	flag.Parse()
@@ -59,16 +60,30 @@ func authConfig() auth.AuthenticatorConfig {
 	}
 }
 
+func dbConfig() persistance.MongoDBConfig {
+	mongodbUri := util.Getenv("MONGODB_URI", "mongodb://localhost:27017")
+	requestTimeoutSec := flag.Int64("dbRequestTimeoutSec", 10, "Database request timeout seconds")
+	flag.Parse()
+	return persistance.MongoDBConfig{
+		Uri:               mongodbUri,
+		RequestTimeoutSec: *requestTimeoutSec,
+	}
+}
+
 func main() {
 	http.Handle("/", http.FileServer(http.Dir("./public")))
 
+	dbConfig := dbConfig()
+	persistance := persistance.NewPersistance(dbConfig)
+
+	hubConfig := hubConfig()
+	controller := controller.NewGameController(persistance)
+
 	authConfig := authConfig()
-	auth := auth.NewAuthenticator(authConfig)
+	auth := auth.NewAuthenticator(authConfig, controller)
 	http.HandleFunc("/google/oauth2", auth.HandleGoogleAuth2)
 	http.HandleFunc("/google/oauth2/callback", auth.HandleGoogleAuth2Callback)
 
-	hubConfig := hubConfig()
-	cntrl := controller.NewGameController()
-	hub := session.NewHub(hubConfig, cntrl)
+	hub := session.NewHub(hubConfig, controller)
 	hub.Start()
 }

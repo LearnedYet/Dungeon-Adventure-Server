@@ -1,9 +1,14 @@
 package controller
 
 import (
+	"github.com/LearnedYet/Dungeon-Adventure-Server/auth"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/users"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/engine"
 )
+
+func (c *GameController) HandleUserAuthenticated(credentials auth.UserCredentials) bool {
+	return true
+}
 
 func (c *GameController) ConnectionStatusChanged(playerId engine.PlayerId, isOffline bool) {
 	c.users.ConnectionStatusChanged(playerId, isOffline)
