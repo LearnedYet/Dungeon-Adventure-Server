@@ -3,7 +3,7 @@ package domain
 import "github.com/LearnedYet/Dungeon-Adventure-Server/util"
 
 type UnitResistance struct {
-	Damage
+	Damage `bson:",inline"`
 }
 
 func (r *UnitResistance) Accumulate(resistance UnitResistance) {
