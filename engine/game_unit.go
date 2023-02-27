@@ -4,14 +4,6 @@ import (
 	"github.com/LearnedYet/Dungeon-Adventure-Server/domain"
 )
 
-type GameUnitClass string
-
-const (
-	UnitClassTank  GameUnitClass = "tank"
-	UnitClassRogue GameUnitClass = "rogue"
-	UnitClassMage  GameUnitClass = "mage"
-)
-
 type GameUnitFaction uint
 
 const (
