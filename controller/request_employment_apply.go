@@ -1,6 +1,9 @@
 package controller
 
-import "github.com/LearnedYet/Dungeon-Adventure-Server/engine"
+import (
+	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/users"
+	"github.com/LearnedYet/Dungeon-Adventure-Server/engine"
+)
 
 type ApplyForAJobRequestData struct {
 	Code engine.PlayerJobCode `json:"code"`
@@ -22,5 +25,6 @@ func (c *GameController) handleApplyForAJobRequest(playerId engine.PlayerId, req
 	if jobStatus != nil {
 		c.persistJobStatus(user.Email, *jobStatus)
 	}
+	c.users.ChangeUserStatus(playerId, users.UserStatusAtJob)
 	return response.WithStatus(ResponseStatusOk)
 }

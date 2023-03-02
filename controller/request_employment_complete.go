@@ -1,6 +1,9 @@
 package controller
 
-import "github.com/LearnedYet/Dungeon-Adventure-Server/engine"
+import (
+	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/users"
+	"github.com/LearnedYet/Dungeon-Adventure-Server/engine"
+)
 
 func (c *GameController) handleCompleteJobRequest(playerId engine.PlayerId, request *Request, response *Response) string {
 	user, ok := c.users.Get(playerId)
@@ -14,6 +17,7 @@ func (c *GameController) handleCompleteJobRequest(playerId engine.PlayerId, requ
 	if jobStatus != nil {
 		c.persistJobStatus(user.Email, *jobStatus)
 	}
+	c.users.ChangeUserStatus(playerId, users.UserStatusJoined)
 	c.users.AccumulateBooty(playerId, reward)
 	response.Data[DataKeyReward] = reward
 	return response.WithStatus(ResponseStatusOk)
