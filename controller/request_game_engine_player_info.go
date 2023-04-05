@@ -2,7 +2,7 @@ package controller
 
 import "github.com/LearnedYet/Dungeon-Adventure-Server/engine"
 
-func (c *GameController) handlePlayerInfoRequest(playerId engine.PlayerId, request *Request, response *Response) string {
+func (c *GameController) handlePlayerInfoRequest(playerId engine.PlayerId, request *Request, response *Response) []byte {
 	wrapper, ok := c.engines.Find(playerId)
 	if !ok {
 		return response.WithStatus(ResponseStatusNotFound)

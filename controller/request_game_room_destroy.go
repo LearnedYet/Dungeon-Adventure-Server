@@ -5,7 +5,7 @@ import (
 	"github.com/LearnedYet/Dungeon-Adventure-Server/engine"
 )
 
-func (c *GameController) handleDestroyGameRoomRequest(playerId engine.PlayerId, request *Request, response *Response) string {
+func (c *GameController) handleDestroyGameRoomRequest(playerId engine.PlayerId, request *Request, response *Response) []byte {
 	if !c.rooms.ExistsForHostId(playerId) {
 		return response.WithStatus(ResponseStatusNotAllowed)
 	}
