@@ -2,13 +2,11 @@ package main
 
 import (
 	"flag"
-	"io"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/auth"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/controller"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/persistance"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/session"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/util"
-	"net/http"
 	"os"
 
 	log "github.com/sirupsen/logrus"
@@ -86,14 +84,7 @@ func main() {
 	persistance := persistance.NewPersistance(persistanceConfig)
 	controller := controller.NewGameController(persistance)
 	auth := auth.NewAuthenticator(authConfig, controller)
-	http.HandleFunc("/google/oauth2", auth.HandleGoogleAuth2)
-	http.HandleFunc("/google/oauth2/callback", auth.HandleGoogleAuth2Callback)
-	http.HandleFunc("/configuration", func(w http.ResponseWriter, r *http.Request) {
-		w.Header().Set("Access-Control-Allow-Origin", "*")
-		data, _ := io.ReadAll(r.Body)
-		w.Write(controller.HandleConfigurationRequest(data))
-	})
-
+	session.InitRoutes(controller, auth)
 	hub := session.NewHub(hubConfig, controller)
 	hub.Start()
 }
