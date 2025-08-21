@@ -5,6 +5,7 @@ import (
 	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/users"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/domain"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/persistance/model"
+	"net"
 	"regexp"
 )
 
@@ -14,7 +15,7 @@ type SetPlayerInfoRequestData struct {
 	Class    domain.UnitClass         `json:"class"`
 }
 
-func (c *GameController) handleSetPlayerInfoRequest(request *Request, response *Response) []byte {
+func (c *GameController) handleSetPlayerInfoRequest(ip net.IP, request *Request, response *Response) []byte {
 	data := parseRequestData(&SetPlayerInfoRequestData{}, request.Data)
 	if data == nil {
 		return response.WithStatus(ResponseStatusMalformed)
@@ -22,6 +23,9 @@ func (c *GameController) handleSetPlayerInfoRequest(request *Request, response *
 	userModel, ok := c.persistance.GetUserFromAuthCache(data.Token)
 	if userModel == nil || !ok {
 		return response.WithStatus(ResponseStatusNotFound)
+	}
+	if !userModel.Ip.Equal(ip) {
+		return response.WithStatus(ResponseStatusNotAllowed)
 	}
 	if len(userModel.Units) != 0 {
 		return response.WithStatus(ResponseStatusNotAllowed)
