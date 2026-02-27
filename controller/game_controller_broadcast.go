@@ -1,12 +1,20 @@
 package controller
 
 import (
+	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/chat"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/users"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/engine"
 )
 
 func (c *GameController) RegisterBroadcaster(broadcaster GameControllerBroadcaster) {
 	c.broadcaster = broadcaster
+}
+
+func (c *GameController) broadcastChatMessage(playerIds []engine.PlayerId, message *chat.ChatMessage) {
+	response := NewResponse()
+	response.Type = RequestChatMessage
+	response.Data[DataKeyMessage] = message
+	c.broadcaster.BroadcastGameMessageSync(playerIds, response.WithStatus(ResponseStatusOk))
 }
 
 func (c *GameController) broadcastGameAction(playerIds []engine.PlayerId, result *engine.GameEvent) {

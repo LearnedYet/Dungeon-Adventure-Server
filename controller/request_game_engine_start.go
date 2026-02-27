@@ -1,6 +1,7 @@
 package controller
 
 import (
+	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/chat"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/gameengines"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/users"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/engine"
@@ -16,7 +17,16 @@ func (c *GameController) handleStartGameRequest(playerId engine.PlayerId, reques
 		return response.WithStatus(ResponseStatusNotFound)
 	}
 	actors := room.GetActors()
-	wrapper := gameengines.NewGameEngineWrapper(engine.NewGameEngine(scenario, actors), c.broadcastGameAction)
+	ch := chat.NewChat(chat.ChatConfig{
+		MaxMessages:      CHAT_MAX_MESSAGES,
+		MaxMessageLength: CHAT_MAX_MESSAGE_LENGTH,
+	}, c.broadcastChatMessage)
+	for _, actor := range actors {
+		ch.AddParticipant(actor.GetPlayerId(), chat.ChatParticipant{
+			Nickname: actor.PlayerInfo.Nickname,
+		})
+	}
+	wrapper := gameengines.NewGameEngineWrapper(engine.NewGameEngine(scenario, actors), c.broadcastGameAction, ch)
 	wrapper.Lock()
 	defer wrapper.Unlock()
 	state, playerIds := c.engines.Register(wrapper)
