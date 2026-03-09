@@ -4,6 +4,7 @@ import (
 	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/config"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/employment"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/gameengines"
+	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/quests"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/rooms"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/shop"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/users"
@@ -23,6 +24,7 @@ type GameController struct {
 	rooms          *rooms.GameRooms
 	engines        *gameengines.GameEngines
 	shop           *shop.Shop
+	quests         *quests.Quests
 	employment     *employment.Employment
 	configurator   *engine.UnitConfigurator
 	itemsConfig    *config.GameItemsConfig
@@ -38,6 +40,7 @@ func NewGameController(persistance *persistance.Persistance) *GameController {
 	c.rooms = rooms.NewGameRooms()
 	c.engines = gameengines.NewGameEngines()
 	c.shop = shop.NewShop()
+	c.quests = quests.NewQuests()
 	c.employment = employment.NewEmployment()
 	c.itemsConfig = config.NewGameItemsConfig()
 	c.unitsConfig = config.NewGameUnitsConfig()
@@ -55,6 +58,9 @@ func (c *GameController) init() {
 	}
 	if err := c.shop.LoadItems(SHOP_CONFIG_PATH, c.itemsConfig); err != nil {
 		log.Fatal("Unable to load shop configuration: ", err)
+	}
+	if err := c.quests.LoadItems(QUESTS_CONFIG_PATH, c.itemsConfig); err != nil {
+		log.Fatal("Unable to load quests configuration: ", err)
 	}
 	if err := c.unitsConfig.LoadUnits(UNITS_CONFIG_PATH, c.itemsConfig); err != nil {
 		log.Fatal("Unable to load units configuration: ", err)
