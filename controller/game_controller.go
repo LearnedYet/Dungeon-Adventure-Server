@@ -1,6 +1,7 @@
 package controller
 
 import (
+	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/chat"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/config"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/employment"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/gameengines"
@@ -32,6 +33,7 @@ type GameController struct {
 	scenarioConfig *config.GameScenariosConfig
 	broadcaster    GameControllerBroadcaster
 	persistance    *persistance.Persistance
+	lobbyChat      *chat.Chat
 }
 
 func NewGameController(persistance *persistance.Persistance) *GameController {
@@ -48,6 +50,12 @@ func NewGameController(persistance *persistance.Persistance) *GameController {
 	c.configurator = engine.NewUnitConfigurator()
 	c.broadcaster = c
 	c.persistance = persistance
+	c.lobbyChat = chat.NewChat(chat.ChatConfig{
+		MaxMessages:         CHAT_MAX_MESSAGES,
+		MaxMessageLength:    CHAT_MAX_MESSAGE_LENGTH,
+		MessageRate:         CHAT_MESSAGE_RATE,
+		MessageRateDuration: CHAT_MESSAGE_RATE_DURATION,
+	}, c.broadcastLobbyChatMessage, c.broadcastLobbyChatParticipant)
 	c.init()
 	return c
 }
