@@ -1,7 +1,7 @@
 # dungeon-adventure-server
-Golang project for a turn-based multiplayer RPG game server
+Golang project of a turn-based multiplayer RPG game server.  
 
-[LearnedYet.org/dungeon-adventure-server](https://learnedyet.github.io/Dungeon-Adventure-Client/)
+Hosted at: [LearnedYet.github.io/dungeon-adventure-server-html-client](https://learnedyet.github.io/Dungeon-Adventure-Client/)  
 
 ## BaseAttributes:
 * `health`        - the **hit points** a unit can take before dying
