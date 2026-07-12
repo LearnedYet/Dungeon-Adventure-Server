@@ -5,6 +5,7 @@ import "github.com/LearnedYet/Dungeon-Adventure-Server/util"
 type UnitRecovery struct {
 	UnitState
 	Damage
+	Deviation float32 `json:"deviation,omitempty"`
 }
 
 func (r *UnitRecovery) Normalize() {
