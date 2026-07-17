@@ -3,6 +3,7 @@ package engine
 import (
 	"github.com/LearnedYet/Dungeon-Adventure-Server/domain"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/util"
+	"sort"
 )
 
 func (e *GameEngine) NextPhase() *GameEvent {
@@ -40,10 +41,17 @@ func (e *GameEngine) NextPhaseRequired() bool {
 }
 
 func (e *GameEngine) prepareNextSpot(actors []*GameUnit, corpses []*GameUnit) {
+	e.sortActors(actors)
 	e.scenario.PrepareNextSpot(actors, corpses)
 	e.state.ResetWaitingOrder()
 	e.state.MakeUnitsQueue(e.battlefield().Units)
 	e.state.IncrementSpotNumber()
+}
+
+func (e *GameEngine) sortActors(actors []*GameUnit) {
+	sort.SliceStable(actors, func(a, b int) bool {
+		return actors[a].Uid < actors[b].Uid
+	})
 }
 
 func (e *GameEngine) processStartRound() {
