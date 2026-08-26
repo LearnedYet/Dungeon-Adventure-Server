@@ -1,6 +1,7 @@
 package controller
 
 import (
+	"encoding/json/v2"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/users"
 )
 
