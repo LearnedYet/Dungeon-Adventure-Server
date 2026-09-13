@@ -5,6 +5,9 @@ import (
 	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/users"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/engine"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/persistance/model"
+	"time"
+
+	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
 func (c *GameController) HandleUserAuthenticated(credentials auth.UserCredentials) (auth.AuthenticationStatus, engine.PlayerId) {
@@ -24,12 +27,16 @@ func (c *GameController) HandleUserAuthenticated(credentials auth.UserCredential
 }
 
 func (c *GameController) HandleGuestUserAuthenticated(credentials auth.UserCredentials) auth.AuthenticationStatus {
+	timeNow := time.Now().UTC()
 	status := auth.AuthenticationStatus{}
 	userModel := &model.UserModel{
-		Email:    model.UserEmail(credentials.Email),
-		Nickname: credentials.Nickname,
-		Picture:  credentials.Picture,
-		IsGuest:  true,
+		Id:        primitive.NewObjectID(),
+		CreatedAt: timeNow,
+		UpdatedAt: timeNow,
+		Email:     model.UserEmail(credentials.Email),
+		Nickname:  credentials.Nickname,
+		Picture:   credentials.Picture,
+		IsGuest:   true,
 	}
 	status.Token = c.persistance.AddUserToAuthCache(userModel)
 	status.IsNewPlayer = true
