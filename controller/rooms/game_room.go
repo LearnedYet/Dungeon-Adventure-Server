@@ -2,6 +2,7 @@ package rooms
 
 import (
 	"github.com/LearnedYet/Dungeon-Adventure-Server/controller/users"
+	"github.com/LearnedYet/Dungeon-Adventure-Server/domain"
 	"github.com/LearnedYet/Dungeon-Adventure-Server/engine"
 	"slices"
 )
@@ -58,7 +59,15 @@ func (r *GameRoom) GetActors() []*engine.GameUnit {
 		result = append(result, unit)
 	}
 	for i := range r.mercenaries {
-		result = append(result, r.mercenaries[i])
+		result = append(result, r.mercenaries[i].Clone())
+	}
+	return result
+}
+
+func (r *GameRoom) GetMercenaryCodes() []domain.UnitCode {
+	result := []domain.UnitCode{}
+	for i := range r.mercenaries {
+		result = append(result, r.mercenaries[i].Code)
 	}
 	return result
 }
