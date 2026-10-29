@@ -32,7 +32,7 @@ func (r *MongoDBRepository[T, P]) InsertOne(ctx context.Context, model P) (Objec
 	model.SetUpdatedAt(t)
 	result, err := r.collection.InsertOne(ctx, model)
 	if err != nil {
-		log.Error("Mongodb: InsertOne (", model, ") to collection:", r.collection.Name(), " fail: ", err)
+		log.Error("MongoDB：InsertOne（", model, "）写入集合：", r.collection.Name(), " 失败：", err)
 		return ObjectIdEmpty, false
 	}
 	if objectId, ok := result.InsertedID.(primitive.ObjectID); ok {
@@ -44,7 +44,7 @@ func (r *MongoDBRepository[T, P]) InsertOne(ctx context.Context, model P) (Objec
 func (r *MongoDBRepository[T, P]) UpdateOneById(ctx context.Context, id ObjectId, fields bson.D) (int64, bool) {
 	objectId, err := primitive.ObjectIDFromHex(string(id))
 	if err != nil {
-		log.Error("Mongodb: UpdateOneById: ", id, " in collection:", r.collection.Name(), " fail: ", err)
+		log.Error("MongoDB：UpdateOneById，标识：", id, "，集合：", r.collection.Name(), " 失败：", err)
 		return 0, false
 	}
 
@@ -53,7 +53,7 @@ func (r *MongoDBRepository[T, P]) UpdateOneById(ctx context.Context, id ObjectId
 	update := bson.D{{Key: "$set", Value: fields}}
 	result, err := r.collection.UpdateOne(ctx, filter, update)
 	if err != nil {
-		log.Error("Mongodb: UpdateOneById: ", id, " in collection:", r.collection.Name(), " fail: ", err)
+		log.Error("MongoDB：UpdateOneById，标识：", id, "，集合：", r.collection.Name(), " 失败：", err)
 		return 0, false
 	}
 	return result.MatchedCount, true
@@ -64,7 +64,7 @@ func (r *MongoDBRepository[T, P]) UpdateOne(ctx context.Context, filter bson.D, 
 	update := bson.D{{Key: "$set", Value: fields}}
 	result, err := r.collection.UpdateOne(ctx, filter, update)
 	if err != nil {
-		log.Error("Mongodb: UpdateOne: ", filter, " in collection:", r.collection.Name(), " fail: ", err)
+		log.Error("MongoDB：UpdateOne，筛选条件：", filter, "，集合：", r.collection.Name(), " 失败：", err)
 		return 0, false
 	}
 	return result.MatchedCount, true
@@ -73,7 +73,7 @@ func (r *MongoDBRepository[T, P]) UpdateOne(ctx context.Context, filter bson.D, 
 func (r *MongoDBRepository[T, P]) FindOneById(ctx context.Context, id ObjectId, accumulator P) (P, bool) {
 	objectId, err := primitive.ObjectIDFromHex(string(id))
 	if err != nil {
-		log.Error("Mongodb: FindOneById: ", id, " in collection:", r.collection.Name(), " fail: ", err)
+		log.Error("MongoDB：FindOneById，标识：", id, "，集合：", r.collection.Name(), " 失败：", err)
 		return nil, false
 	}
 
@@ -81,7 +81,7 @@ func (r *MongoDBRepository[T, P]) FindOneById(ctx context.Context, id ObjectId, 
 	err = r.collection.FindOne(ctx, filter).Decode(accumulator)
 	if err != nil {
 		if err != mongo.ErrNoDocuments {
-			log.Error("Mongodb: FindOneById: ", id, " in collection:", r.collection.Name(), " fail: ", err)
+			log.Error("MongoDB：FindOneById，标识：", id, "，集合：", r.collection.Name(), " 失败：", err)
 		}
 		return nil, false
 	}
@@ -94,7 +94,7 @@ func (r *MongoDBRepository[T, P]) FindOne(ctx context.Context, filter bson.D, ac
 		if err == mongo.ErrNoDocuments {
 			return nil, true
 		}
-		log.Error("Mongodb: FindOne: ", filter, " in collection:", r.collection.Name(), " fail: ", err)
+		log.Error("MongoDB：FindOne，筛选条件：", filter, "，集合：", r.collection.Name(), " 失败：", err)
 		return nil, false
 	}
 	return accumulator, true
@@ -103,14 +103,14 @@ func (r *MongoDBRepository[T, P]) FindOne(ctx context.Context, filter bson.D, ac
 func (r *MongoDBRepository[T, P]) DeleteOneById(ctx context.Context, id ObjectId) (int64, bool) {
 	objectId, err := primitive.ObjectIDFromHex(string(id))
 	if err != nil {
-		log.Error("Mongodb: DeleteOneById: ", id, " from collection:", r.collection.Name(), " fail: ", err)
+		log.Error("MongoDB：DeleteOneById，标识：", id, "，从集合删除：", r.collection.Name(), " 失败：", err)
 		return 0, false
 	}
 
 	filter := bson.D{{Key: "_id", Value: objectId}}
 	result, err := r.collection.DeleteOne(ctx, filter)
 	if err != nil {
-		log.Error("Mongodb: DeleteOneById: ", id, " from collection:", r.collection.Name(), " fail: ", err)
+		log.Error("MongoDB：DeleteOneById，标识：", id, "，从集合删除：", r.collection.Name(), " 失败：", err)
 		return 0, false
 	}
 	return result.DeletedCount, true

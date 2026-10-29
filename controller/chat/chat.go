@@ -9,9 +9,9 @@ import (
 )
 
 var (
-	ErrMessageIsTooLong    error = errors.New("chat message is too long")
-	ErrParticipantNotFound error = errors.New("chat participant not found")
-	ErrMessagerateLimit    error = errors.New("chat message rate limit reached")
+	ErrMessageIsTooLong    error = errors.New("聊天消息过长")
+	ErrParticipantNotFound error = errors.New("未找到聊天参与者")
+	ErrMessagerateLimit    error = errors.New("聊天消息发送过于频繁")
 )
 
 type BroadcastChatMessageFunc func(playerIds []engine.PlayerId, message *ChatMessage)

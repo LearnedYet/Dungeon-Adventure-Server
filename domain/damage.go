@@ -5,23 +5,23 @@ import (
 )
 
 type Damage struct {
-	Stabbing       float32 `json:"stabbing,omitzero" bson:"stabbing,omitempty"`     // affects health
-	Cutting        float32 `json:"cutting,omitzero" bson:"cutting,omitempty"`       // affects health
-	Crushing       float32 `json:"crushing,omitzero" bson:"crushing,omitempty"`     // affects health
-	Fire           float32 `json:"fire,omitzero" bson:"fire,omitempty"`             // affects health
-	Cold           float32 `json:"cold,omitzero" bson:"cold,omitempty"`             // affects health
-	Lightning      float32 `json:"lightning,omitzero" bson:"lightning,omitempty"`   // affects health
-	Acid           float32 `json:"acid,omitzero" bson:"acid,omitempty"`             // affects health
-	Poison         float32 `json:"poison,omitzero" bson:"poison,omitempty"`         // affects health
-	Exhaustion     float32 `json:"exhaustion,omitzero" bson:"exhaustion,omitempty"` // affects stamina
-	ManaDrain      float32 `json:"manaDrain,omitzero" bson:"manaDrain,omitempty"`   // affects mana
-	Bleeding       float32 `json:"bleeding,omitzero" bson:"bleeding,omitempty"`     // affects health
-	Fear           float32 `json:"fear,omitzero" bson:"fear,omitempty"`             // affects stress
-	Curse          float32 `json:"curse,omitzero" bson:"curse,omitempty"`           // affects stress
-	Madness        float32 `json:"madness,omitzero" bson:"madness,omitempty"`       // affects stress
-	IsCritical     bool    `json:"isCritical,omitzero" bson:"-"`                    // critical damage flag
-	IsCriticalMiss bool    `json:"isCriticalMiss,omitzero" bson:"-"`                // critical miss damage flag
-	WithStun       bool    `json:"withStun,omitzero" bson:"-"`                      // stun flag
+	Stabbing       float32 `json:"stabbing,omitzero" bson:"stabbing,omitempty"`     // 影响生命值
+	Cutting        float32 `json:"cutting,omitzero" bson:"cutting,omitempty"`       // 影响生命值
+	Crushing       float32 `json:"crushing,omitzero" bson:"crushing,omitempty"`     // 影响生命值
+	Fire           float32 `json:"fire,omitzero" bson:"fire,omitempty"`             // 影响生命值
+	Cold           float32 `json:"cold,omitzero" bson:"cold,omitempty"`             // 影响生命值
+	Lightning      float32 `json:"lightning,omitzero" bson:"lightning,omitempty"`   // 影响生命值
+	Acid           float32 `json:"acid,omitzero" bson:"acid,omitempty"`             // 影响生命值
+	Poison         float32 `json:"poison,omitzero" bson:"poison,omitempty"`         // 影响生命值
+	Exhaustion     float32 `json:"exhaustion,omitzero" bson:"exhaustion,omitempty"` // 影响体力
+	ManaDrain      float32 `json:"manaDrain,omitzero" bson:"manaDrain,omitempty"`   // 影响法力
+	Bleeding       float32 `json:"bleeding,omitzero" bson:"bleeding,omitempty"`     // 影响生命值
+	Fear           float32 `json:"fear,omitzero" bson:"fear,omitempty"`             // 影响压力
+	Curse          float32 `json:"curse,omitzero" bson:"curse,omitempty"`           // 影响压力
+	Madness        float32 `json:"madness,omitzero" bson:"madness,omitempty"`       // 影响压力
+	IsCritical     bool    `json:"isCritical,omitzero" bson:"-"`                    // 暴击伤害标志
+	IsCriticalMiss bool    `json:"isCriticalMiss,omitzero" bson:"-"`                // 严重失误伤害标志
+	WithStun       bool    `json:"withStun,omitzero" bson:"-"`                      // 眩晕标志
 }
 
 func (d *Damage) Accumulate(damage Damage) {

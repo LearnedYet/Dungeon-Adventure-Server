@@ -1,8 +1,8 @@
 [
     {
         "code": "job-clean-01",
-        "name": "Tavern floor scouring",
-        "description": "Scrub the ale-stained floorboards of the local tavern, banishing the grime and echoes of last night's revelry. A humble task for those seeking coin and humility.",
+        "name": "擦洗酒馆地板",
+        "description": "刷洗本地酒馆沾满酒渍的地板，清除污垢与昨夜狂欢的余痕。这份卑微的工作能带来金币，也教人谦逊。",
         "reward": {
             "coins": 35
         },
@@ -14,8 +14,8 @@
     },
     {
         "code": "job-clean-02",
-        "name": "Dishwashing",
-        "description": "Plunge your hands into greasy water and cleanse the tavern's mountain of soiled plates and tankards. The work is thankless, but the pay is certain.",
+        "name": "洗碗",
+        "description": "把双手浸入油腻的水中，洗净酒馆里堆积如山的餐盘与酒杯。工作虽不讨好，报酬却有保障。",
         "reward": {
             "coins": 40
         },
@@ -27,8 +27,8 @@
     },
     {
         "code": "job-library-01",
-        "name": "Library attendant",
-        "description": "Assist a reclusive scholar in his dust-choked library, sorting ancient tomes and deciphering cryptic manuscripts. Knowledge and coin await the diligent.",
+        "name": "图书馆助手",
+        "description": "在满是尘埃的图书馆中帮助隐居学者整理古书、解读晦涩手稿。勤勉者将收获知识与金币。",
         "reward": {
             "coins": 100
         },
@@ -40,8 +40,8 @@
     },
     {
         "code": "job-chicken-chase-01",
-        "name": "Chickens on the loose",
-        "description": "Round up every chicken that fled the farmer's hoop before their frantic clucks draw darker things from the hedgerow.",
+        "name": "追回散养鸡",
+        "description": "赶在惊慌的鸡叫声引来树篱中更黑暗的东西之前，把逃出农舍的鸡全部找回来。",
         "reward": {
             "coins": 100
         },
@@ -53,8 +53,8 @@
     },
     {
         "code": "job-mining-01",
-        "name": "Prospecting",
-        "description": "Spend your hours with a pickaxe in the haunted mines, seeking gold hidden in stone steeped with restless shadows.",
+        "name": "勘探矿藏",
+        "description": "在闹鬼的矿井中挥镐劳作，寻找藏在不安阴影所浸染岩石中的黄金。",
         "reward": {
             "coins": 100
         },
@@ -66,8 +66,8 @@
     },
     {
         "code": "job-arm-wrestling-01",
-        "name": "Arm wrestling",
-        "description": "Win the arm wrestling contest in a local tavern, driving your rival's hand down under the weight of stale ale and hungry whispers.",
+        "name": "掰手腕",
+        "description": "在本地酒馆赢得掰手腕比赛，在陈酒的气息与贪婪的低语中将对手的手压下。",
         "reward": {
             "coins": 250
         },
@@ -79,8 +79,8 @@
     },
     {
         "code": "job-dice-rolling-01",
-        "name": "Dice rolling",
-        "description": "Test your luck in a dice game against the tavern's crowd, casting bones beneath flickering torchlight to outplay every shadowed rival.",
+        "name": "掷骰子",
+        "description": "在摇曳火光下与酒馆众人掷骰子比运气，击败每个藏在阴影中的对手。",
         "reward": {
             "coins": 200
         },

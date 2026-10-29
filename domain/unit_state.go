@@ -6,9 +6,9 @@ import (
 
 type UnitState struct {
 	UnitBaseAttributes
-	Stress       float32 `json:"stress,omitzero"`       // reduces action chance, affects retreat chance
-	IsStunned    bool    `json:"isStunned,omitzero"`    // stun flag
-	WaitingOrder uint    `json:"waitingOrder,omitzero"` // waiting order
+	Stress       float32 `json:"stress,omitzero"`       // 降低行动成功率，并影响撤退概率
+	IsStunned    bool    `json:"isStunned,omitzero"`    // 眩晕标志
+	WaitingOrder uint    `json:"waitingOrder,omitzero"` // 等待顺序
 }
 
 func (s *UnitState) RestoreDefault(limit UnitBaseAttributes) {

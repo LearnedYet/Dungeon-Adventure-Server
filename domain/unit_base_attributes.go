@@ -5,10 +5,10 @@ import (
 )
 
 type UnitBaseAttributes struct {
-	Health       float32 `json:"health" bson:"health"`              // unit health
-	Stamina      float32 `json:"stamina" bson:"stamina"`            // unit stamina
-	Mana         float32 `json:"mana" bson:"mana"`                  // unit mana
-	ActionPoints float32 `json:"actionPoints" bson:"action_points"` // action points
+	Health       float32 `json:"health" bson:"health"`              // 单位生命值
+	Stamina      float32 `json:"stamina" bson:"stamina"`            // 单位体力
+	Mana         float32 `json:"mana" bson:"mana"`                  // 单位法力
+	ActionPoints float32 `json:"actionPoints" bson:"action_points"` // 行动点
 }
 
 func (a *UnitBaseAttributes) Accumulate(attributes UnitBaseAttributes) {

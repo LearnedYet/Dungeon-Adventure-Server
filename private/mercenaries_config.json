@@ -1,12 +1,12 @@
 [
     {
-        "name": "Villager",
+        "name": "村民",
         "code": "villager-01",
         "class": "opportunist",
         "booty": {},
         "achievements": {},
         "quests": {},
-        "description": "Once a simple villager, he now wanders the shadowed roads with a nameless hunger for danger.",
+        "description": "他曾是普通村民，如今怀着对危险莫名的渴望，游荡在阴暗的道路上。",
         "stats": {
             "progress": {
                 "level": 1
@@ -77,13 +77,13 @@
         }
     },
     {
-        "name": "Soldier",
+        "name": "士兵",
         "code": "soldier-01",
         "class": "opportunist",
         "booty": {},
         "achievements": {},
         "quests": {},
-        "description": "A once-proud royal guard, now scarred and soured by endless nights hunting infernal horrors.",
+        "description": "曾经骄傲的皇家卫兵，如今在无尽夜晚追猎地狱怪物，伤痕累累、心怀苦涩。",
         "stats": {
             "progress": {
                 "level": 5
@@ -158,13 +158,13 @@
         }
     },
     {
-        "name": "Knight",
+        "name": "骑士",
         "code": "knight-01",
         "class": "opportunist",
         "booty": {},
         "achievements": {},
         "quests": {},
-        "description": "Once the princess's personal guard, now a haunted avenger burdened by failure and fire.",
+        "description": "曾是公主的贴身护卫，如今成为背负失败与烈火记忆、饱受折磨的复仇者。",
         "stats": {
             "progress": {
                 "level": 10

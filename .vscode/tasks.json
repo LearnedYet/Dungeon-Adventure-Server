@@ -1,7 +1,7 @@
 {
 	"tasks": [
 		{
-			"label": "Go build",
+			"label": "构建 Go 程序",
 			"type": "shell",
 			"command": "go",
 			"args": [
@@ -17,7 +17,7 @@
 			}
 		},
 		{
-			"label": "Debug Stdin",
+			"label": "调试标准输入",
 			"type": "shell",
 			"command": "dlv debug ./cmd/default/ --headless --listen=:2340 --log --api-version=2",
 			"problemMatcher": [],

@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-// read more at: https://pkg.go.dev/net/http#DefaultTransport
+// 详见： https://pkg.go.dev/net/http#DefaultTransport
 var httpClient http.Client = http.Client{
 	Transport: &http.Transport{
 		Dial: (&net.Dialer{

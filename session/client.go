@@ -47,7 +47,7 @@ func (c *Client) WriteMessage(message []byte) {
 	err := c.conn.WriteMessage(websocket.TextMessage, message)
 	c.mu.Unlock()
 	if err != nil && websocket.IsUnexpectedCloseError(err, websocket.CloseNormalClosure, websocket.CloseGoingAway, websocket.CloseAbnormalClosure) {
-		log.Error("Client (", c.Info(), ") write message error:", err)
+		log.Error("客户端（", c.Info(), "）写入消息失败：", err)
 		c.Kick()
 	}
 }
@@ -62,7 +62,7 @@ func (c *Client) Ping() {
 	err := c.conn.WriteMessage(websocket.PingMessage, []byte{})
 	c.mu.Unlock()
 	if err != nil && websocket.IsUnexpectedCloseError(err, websocket.CloseNormalClosure, websocket.CloseGoingAway, websocket.CloseAbnormalClosure) {
-		log.Error("Client (", c.Info(), ") ping error:", err)
+		log.Error("客户端（", c.Info(), "）发送 ping 失败：", err)
 		c.Kick()
 	}
 }
@@ -78,7 +78,7 @@ func (c *Client) Serve(credentials *controller.JoinRequestData) {
 		mt, message, err := c.conn.ReadMessage()
 		if err != nil {
 			if websocket.IsUnexpectedCloseError(err, websocket.CloseNormalClosure, websocket.CloseGoingAway, websocket.CloseAbnormalClosure) {
-				log.Error("Client (", c.Info(), ") read message error:", err)
+				log.Error("客户端（", c.Info(), "）读取消息失败：", err)
 			}
 			break
 		}

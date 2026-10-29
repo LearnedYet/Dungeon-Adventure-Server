@@ -2,9 +2,9 @@
     "weapon": [
         {
             "type": "weapon",
-            "name": "Punch",
+            "name": "拳击",
             "code": "fist-01",
-            "description": "A bloodied fist. The weapon of the desperate and the damned.",
+            "description": "一只染血的拳头，是绝望者与受诅者最后的武器。",
             "slot": "weapon",
             "slotsNumber": 1,
             "range": {
@@ -25,9 +25,9 @@
         },
         {
             "type": "weapon",
-            "name": "Flea Teeth",
+            "name": "跳蚤口器",
             "code": "flea-byte-01",
-            "description": "A tiny but vicious proboscis quivering with eldritch hunger, its sting drains not just blood but the very essence of magic from those it pierces.",
+            "description": "细小却凶狠的口器因诡异的饥渴而颤动；它不仅吸食鲜血，还会夺走猎物体内的魔力。",
             "slot": "weapon",
             "slotsNumber": 1,
             "range": {
@@ -49,9 +49,9 @@
         },
         {
             "type": "weapon",
-            "name": "Long Tongue",
+            "name": "长舌",
             "code": "long-tongue-01",
-            "description": "A grotesque appendage, hardened by eldritch mutations and dripping with caustic venom. Each lash scorches and dissolves, a creature's only weapon wrought into savage hunger.",
+            "description": "这条畸变的怪舌坚硬而丑陋，滴着腐蚀性毒液。每次抽击都会灼烧、溶解猎物，是怪物饥饿本能铸成的凶器。",
             "slot": "weapon",
             "slotsNumber": 1,
             "range": {
@@ -72,9 +72,9 @@
         },
         {
             "type": "weapon",
-            "name": "Teeth",
+            "name": "利齿",
             "code": "teeth-01",
-            "description": "Gnashing fangs, eager to tear flesh and taste the copper tang of blood. A savage bite in the darkness.",
+            "description": "獠牙不断磨动，渴望撕开血肉、品尝鲜血的铁锈味。这是黑暗中的野蛮撕咬。",
             "slot": "weapon",
             "slotsNumber": 1,
             "range": {
@@ -101,9 +101,9 @@
         },
         {
             "type": "weapon",
-            "name": "Teeth",
+            "name": "利齿",
             "code": "teeth-02",
-            "description": "A feral lunge from above, jaws snapping with primal hunger. The shriek of prey echoes in the night.",
+            "description": "野兽从上方猛扑而下，利颚因原始的饥饿而咬合，猎物的惨叫在夜色中回荡。",
             "slot": "weapon",
             "slotsNumber": 1,
             "range": {
@@ -130,9 +130,9 @@
         },
         {
             "type": "weapon",
-            "name": "Poisoned Teeth",
+            "name": "毒牙",
             "code": "poison-teeth-01",
-            "description": "Fangs dripping with virulent venom, their bite a slow dance with death and despair wrought in poison.",
+            "description": "獠牙滴着剧毒，遭其咬伤便会陷入由毒素、死亡与绝望交织的漫长折磨。",
             "slot": "weapon",
             "slotsNumber": 1,
             "range": {
@@ -159,9 +159,9 @@
         },
         {
             "type": "weapon",
-            "name": "Poisoned Tail",
+            "name": "毒尾",
             "code": "poison-tail-01",
-            "description": "Animal poisoned tail.",
+            "description": "带毒的动物尾巴。",
             "slot": "weapon",
             "slotsNumber": 1,
             "range": {
@@ -190,9 +190,9 @@
         },
         {
             "type": "weapon",
-            "name": "Claws",
+            "name": "利爪",
             "code": "claws-01",
-            "description": "A crescent of black iron, built to rake flesh and leave a trail of bleeding shadow.",
+            "description": "黑铁般的弯曲利爪，专为撕裂血肉而生，所过之处留下流血的痕迹。",
             "slot": "weapon",
             "slotsNumber": 1,
             "range": {
@@ -219,9 +219,9 @@
         },
         {
             "type": "weapon",
-            "name": "Cursed Claws",
+            "name": "诅咒利爪",
             "code": "cursed-claws-01",
-            "description": "Hooked talons blackened by black sorcery, each scrape leaves a whispering curse beneath the skin.",
+            "description": "邪术熏黑了弯钩般的爪子，每次抓伤都会在皮肤之下留下低语的诅咒。",
             "slot": "weapon",
             "slotsNumber": 1,
             "range": {
@@ -249,9 +249,9 @@
         },
         {
             "type": "weapon",
-            "name": "Cursed Eyed Hand",
+            "name": "诅咒眼手",
             "code": "cursed-hand-eye-01",
-            "description": "A grotesque hand stitched with cursed sight, its gaze watching the living long after death.",
+            "description": "一只长着诅咒之眼的怪手，即使死后仍会凝视生者。",
             "slot": "weapon",
             "slotsNumber": 1,
             "range": {
@@ -274,9 +274,9 @@
         },
         {
             "type": "weapon",
-            "name": "Fire Puch",
+            "name": "火焰拳",
             "code": "fire-punch-01",
-            "description": "A fist wreathed in searing flame, scorching flesh and soul alike. Pain and fire entwined.",
+            "description": "拳头裹着灼热烈焰，肉体与灵魂一同受炙烤，痛苦与火焰纠缠不休。",
             "slot": "weapon",
             "slotsNumber": 1,
             "range": {
@@ -304,9 +304,9 @@
         },
         {
             "type": "weapon",
-            "name": "Sight",
+            "name": "凝视",
             "code": "sight-01",
-            "description": "A baleful gaze unleashes a spectral projectile, cold and merciless as the grave.",
+            "description": "恶毒的目光射出幽灵般的弹体，像坟墓一样冰冷无情。",
             "ammunitionKind": "magicCharge",
             "slot": "weapon",
             "slotsNumber": 1,
@@ -327,9 +327,9 @@
         },
         {
             "type": "weapon",
-            "name": "Sight",
+            "name": "凝视",
             "code": "sight-02",
-            "description": "A baleful gaze unleashes a spectral projectile, cold and merciless as the grave.",
+            "description": "恶毒的目光射出幽灵般的弹体，像坟墓一样冰冷无情。",
             "ammunitionKind": "magicCharge",
             "slot": "weapon",
             "slotsNumber": 1,
@@ -359,9 +359,9 @@
         },
         {
             "type": "weapon",
-            "name": "Throat",
+            "name": "喉咒",
             "code": "throat-01",
-            "description": "A guttural incantation, spewing forth a cursed missile from the abyss within.",
+            "description": "喉间响起低沉咒语，从体内的深渊喷出受诅的飞弹。",
             "ammunitionKind": "magicCharge",
             "slot": "weapon",
             "slotsNumber": 1,
@@ -390,9 +390,9 @@
         },
         {
             "type": "weapon",
-            "name": "Hero Sword",
+            "name": "英雄之剑",
             "code": "sword-01",
-            "description": "A battered blade, its edge dulled by countless battles. Reliable in the hands of the desperate.",
+            "description": "历经战斗的剑刃早已磨钝，却仍是绝望之人手中可靠的伙伴。",
             "slot": "weapon",
             "canBeThrownAway": true,
             "slotsNumber": 1,
@@ -424,9 +424,9 @@
         },
         {
             "type": "weapon",
-            "name": "Short Sword",
+            "name": "短剑",
             "code": "sword-02",
-            "description": "A soldier's trusted blade, its steel whispering tales of blood and betrayal.",
+            "description": "士兵信赖的兵刃，钢铁低语着鲜血与背叛的往事。",
             "durability": 500,
             "slot": "weapon",
             "canBeSold": true,
@@ -463,9 +463,9 @@
         },
         {
             "type": "weapon",
-            "name": "Cursed Sword",
+            "name": "诅咒之剑",
             "code": "cursed-sword-01",
-            "description": "A blade cursed by a forgotten saint, its edge drinks the names of the fallen and leaves only ash in its wake.",
+            "description": "被遗忘的圣者诅咒过此剑；剑锋吞噬亡者之名，所过之处只余灰烬。",
             "durability": 400,
             "slot": "weapon",
             "canBeThrownAway": true,
@@ -503,9 +503,9 @@
         },
         {
             "type": "weapon",
-            "name": "Light Sword",
+            "name": "雷光剑",
             "code": "sword-magic-01",
-            "description": "A sword crackling with lightning, its blade a beacon of wrath in the storm.",
+            "description": "闪电在剑身上跳跃，犹如风暴中愤怒的灯塔。",
             "durability": 700,
             "slot": "weapon",
             "canBeSold": true,
@@ -550,9 +550,9 @@
         },
         {
             "type": "weapon",
-            "name": "Spear",
+            "name": "长矛",
             "code": "spear-01",
-            "description": "A long, wicked spear, perfect for keeping foes at bay or impaling them in the mud.",
+            "description": "修长凶狠的矛，可将敌人挡在远处，也能把他们钉入泥地。",
             "durability": 400,
             "slot": "weapon",
             "canBeSold": true,
@@ -588,9 +588,9 @@
         },
         {
             "type": "weapon",
-            "name": "Hero Bow",
+            "name": "英雄之弓",
             "code": "bow-01",
-            "description": "A weathered bow, its string taut with the promise of silent death from afar.",
+            "description": "饱经风霜的弓，紧绷的弦许诺着远方无声的死亡。",
             "ammunitionKind": "arrow",
             "slot": "weapon",
             "canBeThrownAway": true,
@@ -615,9 +615,9 @@
         },
         {
             "type": "weapon",
-            "name": "Hunter Bow",
+            "name": "猎弓",
             "code": "bow-02",
-            "description": "A hunter's bow, its wood darkened by years of use and the blood of quarry.",
+            "description": "猎人的弓，木身因多年使用与猎物的鲜血而变得暗沉。",
             "ammunitionKind": "arrow",
             "durability": 400,
             "slot": "weapon",
@@ -650,9 +650,9 @@
         },
         {
             "type": "weapon",
-            "name": "Fire Bow",
+            "name": "火焰弓",
             "code": "bow-magic-01",
-            "description": "A bow imbued with infernal fire, each arrow a burning curse upon its target.",
+            "description": "灌注地狱之火的弓，每一支箭都是射向目标的燃烧诅咒。",
             "ammunitionKind": "arrow",
             "durability": 500,
             "slot": "weapon",
@@ -692,9 +692,9 @@
         },
         {
             "type": "weapon",
-            "name": "Triple Bow",
+            "name": "三重弓",
             "code": "bow-triple-01",
-            "description": "A bow of dark wood thrumming with eldritch power. Each draw releases three arrows in a devastating spray of spectral death.",
+            "description": "暗木弓身震荡着诡异魔力，每次拉弦都会射出三支箭，洒下毁灭性的幽影箭雨。",
             "ammunitionKind": "arrow",
             "durability": 700,
             "slot": "weapon",
@@ -735,9 +735,9 @@
         },
         {
             "type": "weapon",
-            "name": "Hero Dagger",
+            "name": "英雄匕首",
             "code": "dagger-01",
-            "description": "A slender blade, perfect for silent murders and quick betrayals in the night.",
+            "description": "纤细的刀刃，适合夜色中无声的暗杀与迅疾的背叛。",
             "slot": "weapon",
             "canBeThrownAway": true,
             "slotsNumber": 1,
@@ -769,9 +769,9 @@
         },
         {
             "type": "weapon",
-            "name": "Fine Dagger",
+            "name": "精制匕首",
             "code": "dagger-02",
-            "description": "A rogue's companion, its edge eager to taste the blood of the unwary.",
+            "description": "游荡者的伙伴，锋刃渴望品尝毫无防备者的鲜血。",
             "durability": 300,
             "slot": "weapon",
             "canBeSold": true,
@@ -808,9 +808,9 @@
         },
         {
             "type": "weapon",
-            "name": "Poison Dagger",
+            "name": "毒匕首",
             "code": "poison-dagger-01",
-            "description": "A wicked blade dipped in venom, its edge whispering of rot, ruin, and slow death.",
+            "description": "淬毒的凶刃，刀锋低语着腐败、毁灭与缓慢的死亡。",
             "durability": 400,
             "slot": "weapon",
             "canBeThrownAway": true,
@@ -846,9 +846,9 @@
         },
         {
             "type": "weapon",
-            "name": "Hero Staff",
+            "name": "英雄法杖",
             "code": "sorcerer-staff-01",
-            "description": "A gnarled staff, humming with arcane power. The mark of a true sorcerer.",
+            "description": "扭曲的法杖嗡鸣着奥术之力，是真正施法者的象征。",
             "ammunitionKind": "magicCharge",
             "slot": "weapon",
             "canBeThrownAway": true,
@@ -874,9 +874,9 @@
         },
         {
             "type": "weapon",
-            "name": "Beginner Staff",
+            "name": "学徒法杖",
             "code": "sorcerer-staff-04",
-            "description": "A novice's staff crowned with a green emerald, its faint glow stirring with dormant sorcery.",
+            "description": "镶着绿色祖母绿的学徒法杖，微光中潜藏着尚未苏醒的魔力。",
             "ammunitionKind": "magicCharge",
             "durability": 300,
             "slot": "weapon",
@@ -915,9 +915,9 @@
         },
         {
             "type": "weapon",
-            "name": "Scare Staff",
+            "name": "恐惧法杖",
             "code": "sorcerer-staff-02",
-            "description": "A staff crowned with a skull, radiating dread and the promise of nightmares.",
+            "description": "杖首嵌着骷髅，散发恐惧，预告着噩梦。",
             "ammunitionKind": "magicCharge",
             "durability": 500,
             "slot": "weapon",
@@ -961,9 +961,9 @@
         },
         {
             "type": "weapon",
-            "name": "Curse Staff",
+            "name": "诅咒法杖",
             "code": "sorcerer-staff-03",
-            "description": "A staff of acid skull, crackling with the taint of a forgotten rite.",
+            "description": "酸蚀骷髅制成的法杖，迸发着被遗忘仪式留下的邪气。",
             "ammunitionKind": "magicCharge",
             "durability": 500,
             "slot": "weapon",
@@ -1004,9 +1004,9 @@
         },
         {
             "type": "weapon",
-            "name": "Hero Axe",
+            "name": "英雄之斧",
             "code": "axe-01",
-            "description": "A brutal axe, its blade chipped and stained with the memories of old massacres.",
+            "description": "凶猛的战斧，刃口缺损，沾染着旧日屠戮的记忆。",
             "slot": "weapon",
             "canBeThrownAway": true,
             "slotsNumber": 2,
@@ -1038,9 +1038,9 @@
         },
         {
             "type": "weapon",
-            "name": "Fine Axe",
+            "name": "精制战斧",
             "code": "axe-02",
-            "description": "A heavy axe, forged for war and the splitting of skulls.",
+            "description": "为战争与劈裂头骨而锻造的沉重战斧。",
             "durability": 500,
             "slot": "weapon",
             "canBeSold": true,
@@ -1076,9 +1076,9 @@
         },
         {
             "type": "weapon",
-            "name": "Fire Axe",
+            "name": "火焰战斧",
             "code": "fire-axe-01",
-            "description": "A massive axe forged in the heart of a volcano, its blade still glowing with infernal heat.",
+            "description": "在火山深处锻成的巨斧，斧刃仍泛着地狱般的灼热红光。",
             "durability": 800,
             "slot": "weapon",
             "canBeSold": true,
@@ -1118,9 +1118,9 @@
         },
         {
             "type": "weapon",
-            "name": "Scythe",
+            "name": "镰刀",
             "code": "scythe-01",
-            "description": "A reaper's scythe, its curved blade thirsting for souls beneath the pale moon.",
+            "description": "收割者的镰刀，弯刃在惨白月光下渴求灵魂。",
             "durability": 700,
             "slot": "weapon",
             "canBeSold": true,
@@ -1159,9 +1159,9 @@
         },
         {
             "type": "weapon",
-            "name": "Rusty Mace",
+            "name": "锈蚀钉头锤",
             "code": "rusty-mace-01",
-            "description": "A corroded mace, heavy and cruel. Its blows shatter bone and hope alike.",
+            "description": "腐蚀而沉重的钉头锤，凶狠的一击能同时击碎骨头与希望。",
             "durability": 50,
             "slot": "weapon",
             "canBeSold": true,
@@ -1198,9 +1198,9 @@
         },
         {
             "type": "weapon",
-            "name": "Rusty Axe",
+            "name": "锈斧",
             "code": "rusty-axe-01",
-            "description": "A battered axe, its edge jagged and eager to bite into flesh.",
+            "description": "破旧的战斧，锯齿般的刃口迫不及待地咬入血肉。",
             "durability": 50,
             "slot": "weapon",
             "canBeSold": true,
@@ -1237,9 +1237,9 @@
         },
         {
             "type": "weapon",
-            "name": "Spiky Club",
+            "name": "尖刺木棒",
             "code": "club-01",
-            "description": "A brutal club, its wooden shaft embedded with iron spikes, wicked enough to shatter skulls and shatter souls.",
+            "description": "粗暴的木棒上嵌着铁刺，足以击碎头骨，也击碎灵魂。",
             "durability": 100,
             "slot": "weapon",
             "canBeSold": true,
@@ -1277,9 +1277,9 @@
         },
         {
             "type": "weapon",
-            "name": "Mace",
+            "name": "钉头锤",
             "code": "mace-01",
-            "description": "A cruel mace studded with jagged iron spikes, each strike ringing like the death-knell of the damned.",
+            "description": "凶狠的锤头布满锯齿状铁刺，每次击打都如受诅者的丧钟。",
             "durability": 200,
             "slot": "weapon",
             "canBeSold": true,
@@ -1316,9 +1316,9 @@
         },
         {
             "type": "weapon",
-            "name": "Bloody Hammer",
+            "name": "血锤",
             "code": "bloody-hammer-01",
-            "description": "A heavy warhammer stained with old blood, its weight enough to shatter hope as well as bone.",
+            "description": "沾着陈血的沉重战锤，足以将希望与骨骼一并砸碎。",
             "durability": 500,
             "slot": "weapon",
             "canBeSold": true,
@@ -1349,9 +1349,9 @@
         },
         {
             "type": "weapon",
-            "name": "Scimitar",
+            "name": "弯刀",
             "code": "scimitar-01",
-            "description": "A curved blade honed on the bones of desert wraiths, thirsty for flesh and whispering old curses.",
+            "description": "在沙漠怨灵的骸骨上磨利的弯刃，渴望血肉，低吟古老诅咒。",
             "durability": 300,
             "slot": "weapon",
             "canBeSold": true,
@@ -1387,9 +1387,9 @@
         },
         {
             "type": "weapon",
-            "name": "Halberd",
+            "name": "长戟",
             "code": "halberd-01",
-            "description": "A war pike stained with old blood, its blade forged to rend armor and marrow alike.",
+            "description": "染着陈血的长柄兵器，专为撕开护甲、贯穿骨髓而锻。",
             "durability": 500,
             "slot": "weapon",
             "canBeSold": true,
@@ -1426,9 +1426,9 @@
         },
         {
             "type": "weapon",
-            "name": "Wooden Staff",
+            "name": "木杖",
             "code": "wooden-staff-01",
-            "description": "A crooked staff of rough-hewn wood, etched with novice runes in forgotten caverns.",
+            "description": "粗木削成的弯杖，上面刻着来自遗忘洞窟的初级符文。",
             "durability": 100,
             "slot": "weapon",
             "canBeSold": true,
@@ -1459,9 +1459,9 @@
         },
         {
             "type": "weapon",
-            "name": "Pitchfork",
+            "name": "草叉",
             "code": "pitchfork-01",
-            "description": "A warped farming fork stained with old blood, its tines whispering of graves and harvests of flesh.",
+            "description": "变形的农用草叉沾着旧血，叉齿低语着坟墓与血肉的收获。",
             "durability": 150,
             "slot": "weapon",
             "canBeSold": true,
@@ -1494,8 +1494,8 @@
     "magic": [
         {
             "type": "magic",
-            "name": "Sm Treatment",
-            "description": "A whispered incantation, weaving faint threads of life into wounded flesh. The touch of hope in a world of agony.",
+            "name": "小型治疗术",
+            "description": "低声念出的咒语把微弱的生命之线织入伤口，是苦难世界中的一丝希望。",
             "code": "magic-health-01",
             "price": {
                 "coins": 350
@@ -1524,8 +1524,8 @@
         },
         {
             "type": "magic",
-            "name": "Lg Treatment",
-            "description": "A ritual of blood and will, mending grievous wounds and staving off the cold embrace of death.",
+            "name": "大型治疗术",
+            "description": "以鲜血和意志施展的仪式，修复重伤，抵御死亡冰冷的拥抱。",
             "code": "magic-health-02",
             "price": {
                 "coins": 700,
@@ -1555,9 +1555,9 @@
         },
         {
             "type": "magic",
-            "name": "Exhaustion",
+            "name": "衰竭术",
             "code": "magic-exhaustion-01",
-            "description": "A withering curse that drains the vital essence from enemies, leaving them hollow and spent.",
+            "description": "枯萎诅咒汲取敌人的生命活力，使其空虚而精疲力尽。",
             "price": {
                 "coins": 800,
                 "ruby": 3
@@ -1582,9 +1582,9 @@
         },
         {
             "type": "magic",
-            "name": "Mana Drain",
+            "name": "法力汲取",
             "code": "magic-mana-drain-01",
-            "description": "A parasitic spell that hungrily siphons arcane power from the minds of mages.",
+            "description": "寄生般的法术，贪婪地抽取法师心智中的奥术力量。",
             "price": {
                 "coins": 650,
                 "ruby": 3
@@ -1609,9 +1609,9 @@
         },
         {
             "type": "magic",
-            "name": "Light Strike",
+            "name": "雷击术",
             "code": "magic-lighting-strike-01",
-            "description": "A terrible channeling of jagged lightning that splits the sky and scorches flesh.",
+            "description": "引导狂暴闪电劈开天空，灼烧血肉。",
             "price": {
                 "coins": 1800,
                 "ruby": 10
@@ -1651,9 +1651,9 @@
         },
         {
             "type": "magic",
-            "name": "Blessing",
+            "name": "祝福术",
             "code": "magic-blessing-01",
-            "description": "An eldritch enchantment that heightens the senses and quickens the body, granting glimpses of fate's flow.",
+            "description": "诡异的附魔强化感官、加速身体，让受术者窥见命运的流向。",
             "price": {
                 "coins": 1500,
                 "ruby": 3
@@ -1683,9 +1683,9 @@
         },
         {
             "type": "magic",
-            "name": "Magic Shield",
+            "name": "魔法护盾",
             "code": "magic-shield-01",
-            "description": "A shimmering ward of spectral force that hardens flesh against piercing blows and crushing strikes.",
+            "description": "幽光般的力场使肉体坚韧，抵挡穿刺与重击。",
             "price": {
                 "coins": 1000,
                 "ruby": 3
@@ -1715,9 +1715,9 @@
         },
         {
             "type": "magic",
-            "name": "Plasma Touch",
+            "name": "等离子触击",
             "code": "plasma-touch-01",
-            "description": "A touch crackling with eldritch lightning, burning the flesh and soul with unholy energy.",
+            "description": "触碰时迸发诡异电光，以不洁能量灼烧肉体与灵魂。",
             "requirements": {
                 "intelligence": 8
             },
@@ -1746,9 +1746,9 @@
         },
         {
             "type": "magic",
-            "name": "Fire Touch",
+            "name": "火焰触击",
             "code": "fire-touch-01",
-            "description": "A searing hand of flame, scorching enemies with burning heat that claws at flesh and bone.",
+            "description": "炽热的火焰之手灼烧敌人，烈焰仿佛撕扯着血肉与骨骼。",
             "requirements": {
                 "intelligence": 10
             },
@@ -1782,9 +1782,9 @@
     "armor": [
         {
             "type": "armor",
-            "name": "Cracked Helm",
+            "name": "开裂头盔",
             "code": "rusty-helmet-01",
-            "description": "A battered helm, its iron pitted and stained by the blood of forgotten battles.",
+            "description": "破旧的铁盔坑洼不平，染着遗忘战役留下的鲜血。",
             "price": {
                 "coins": 30
             },
@@ -1808,9 +1808,9 @@
         },
         {
             "type": "armor",
-            "name": "Warn Boots",
+            "name": "破旧靴子",
             "code": "rusty-boots-01",
-            "description": "Boots of cracked leather and rusted buckles, worn by countless miles and misery.",
+            "description": "皮革开裂、搭扣生锈的靴子，承受过漫长旅途与苦难。",
             "price": {
                 "coins": 30
             },
@@ -1834,9 +1834,9 @@
         },
         {
             "type": "armor",
-            "name": "Cracked Shield",
+            "name": "开裂盾牌",
             "code": "rusty-shield-01",
-            "description": "A splintered shield, its surface marred by axe and arrow.",
+            "description": "碎裂的盾牌上满是斧劈箭射留下的伤痕。",
             "price": {
                 "coins": 50
             },
@@ -1861,9 +1861,9 @@
         },
         {
             "type": "armor",
-            "name": "Tattered Rags",
+            "name": "破布衣",
             "code": "rag-armor-01",
-            "description": "Tattered rags, barely worthy of the name 'armor.' They offer little more than the illusion of safety.",
+            "description": "几乎不配称作护甲的破布，只能带来一丝虚假的安全感。",
             "price": {
                 "coins": 50
             },
@@ -1888,9 +1888,9 @@
         },
         {
             "type": "armor",
-            "name": "Bronze Helmet",
+            "name": "青铜头盔",
             "code": "helmet-01",
-            "description": "A sturdy helmet, forged for those who expect to meet death and wish to spit in its face.",
+            "description": "坚固的头盔，为那些明知将面对死亡、仍敢向它挑衅的人锻造。",
             "durability": 400,
             "slot": "head",
             "canBeSold": true,
@@ -1916,9 +1916,9 @@
         },
         {
             "type": "armor",
-            "name": "Iron Helmet",
+            "name": "铁头盔",
             "code": "helmet-02",
-            "description": "A crude iron helm, hammered in haste and stained by the blood of its first wearer.",
+            "description": "匆忙锻成的粗糙铁盔，染着第一任主人的鲜血。",
             "durability": 500,
             "slot": "head",
             "canBeSold": true,
@@ -1947,9 +1947,9 @@
         },
         {
             "type": "armor",
-            "name": "Knight Helmet",
+            "name": "骑士头盔",
             "code": "helmet-03",
-            "description": "A polished helm with a sealed face, forged to look noble even in the gloom of the grave.",
+            "description": "面部封闭、打磨光亮的头盔，即使在坟墓的阴影中也显得高贵。",
             "durability": 700,
             "slot": "head",
             "canBeSold": true,
@@ -1976,9 +1976,9 @@
         },
         {
             "type": "armor",
-            "name": "Horned Helmet",
+            "name": "角盔",
             "code": "helmet-horns-01",
-            "description": "A horned helm with an open face, worn by those who sought to look fearsome in the dark.",
+            "description": "带角的敞面头盔，佩戴者希望在黑暗中显得更加可怕。",
             "durability": 300,
             "slot": "head",
             "canBeSold": true,
@@ -2005,9 +2005,9 @@
         },
         {
             "type": "armor",
-            "name": "Leather Boots",
+            "name": "皮靴",
             "code": "boots-01",
-            "description": "Boots of thick hide, their soles worn thin by endless marches through mud and blood.",
+            "description": "厚皮制成的靴子，靴底被穿过泥泞与鲜血的无尽行军磨薄。",
             "durability": 400,
             "slot": "leg",
             "canBeSold": true,
@@ -2032,9 +2032,9 @@
         },
         {
             "type": "armor",
-            "name": "Agile Boots",
+            "name": "敏捷靴",
             "code": "agile-boots-01",
-            "description": "Light as a whisper and sure on treacherous ground, these boots carry their wearer swiftly through the gloom.",
+            "description": "轻若低语，在险地也步履稳健，让穿戴者迅速穿行于幽暗之中。",
             "durability": 500,
             "slot": "leg",
             "canBeSold": true,
@@ -2064,9 +2064,9 @@
         },
         {
             "type": "armor",
-            "name": "Sturdy Boots",
+            "name": "结实皮靴",
             "code": "boots-02",
-            "description": "Boots of supple leather, crafted for nobles but stained by the road. They whisper of both privilege and peril.",
+            "description": "柔韧皮革制成，本为贵族打造，如今却染满路尘，兼具荣宠与险境的气息。",
             "durability": 500,
             "slot": "leg",
             "canBeSold": true,
@@ -2091,9 +2091,9 @@
         },
         {
             "type": "armor",
-            "name": "Iron Boots",
+            "name": "铁靴",
             "code": "boots-03",
-            "description": "Boots forged in the black heat of the abyss, their iron plates still whispering with the cries of fallen knights.",
+            "description": "在深渊的黑热中锻成，铁片上仿佛还回荡着阵亡骑士的哀号。",
             "durability": 700,
             "slot": "leg",
             "canBeSold": true,
@@ -2122,9 +2122,9 @@
         },
         {
             "type": "armor",
-            "name": "Worn Gloves",
+            "name": "破旧手套",
             "code": "hand-bandage-01",
-            "description": "Worn leather gloves. They offers only the slightest protection against the slow ruin of blood loss.",
+            "description": "磨损的皮手套，只能稍稍抵挡失血带来的缓慢衰败。",
             "durability": 50,
             "slot": "hand",
             "canBeSold": true,
@@ -2147,9 +2147,9 @@
         },
         {
             "type": "armor",
-            "name": "Leather Gloves",
+            "name": "皮手套",
             "code": "gloves-01",
-            "description": "Gloves of rough leather, their seams darkened by sweat and old blood.",
+            "description": "粗皮手套，缝线因汗水与旧血而发黑。",
             "durability": 400,
             "slot": "hand",
             "canBeSold": true,
@@ -2174,9 +2174,9 @@
         },
         {
             "type": "armor",
-            "name": "Fine Gloves",
+            "name": "精制手套",
             "code": "gloves-02",
-            "description": "Gloves of masterwork make, their touch as deft as a thief's and as sure as a duelist's.",
+            "description": "大师制作的手套，触感如盗贼般灵巧，动作如决斗者般稳健。",
             "durability": 500,
             "slot": "hand",
             "canBeSold": true,
@@ -2201,9 +2201,9 @@
         },
         {
             "type": "armor",
-            "name": "Knight Gloves",
+            "name": "骑士手套",
             "code": "gloves-03",
-            "description": "Gauntlets of hardened leather, once worn by a knight whose soul rotted beneath his armor.",
+            "description": "硬化皮革制成的护手，曾属于一名灵魂在甲胄下腐朽的骑士。",
             "durability": 700,
             "slot": "hand",
             "canBeSold": true,
@@ -2229,9 +2229,9 @@
         },
         {
             "type": "armor",
-            "name": "Light Gloves",
+            "name": "雷光手套",
             "code": "lightning-gloves-01",
-            "description": "Gloves woven with silver thread, crackling faintly with arcane lightning.",
+            "description": "银线编织的手套，隐约闪动着奥术电光。",
             "durability": 700,
             "slot": "hand",
             "canBeSold": true,
@@ -2259,9 +2259,9 @@
         },
         {
             "type": "armor",
-            "name": "Sturdy Shield",
+            "name": "坚固盾牌",
             "code": "shield-01",
-            "description": "A broad shield, its face scarred by a hundred blows. It stands as a bulwark between its bearer and the abyss.",
+            "description": "宽大的盾面布满百次重击的伤痕，在持盾者与深渊之间筑起屏障。",
             "durability": 400,
             "slot": "weapon",
             "canBeSold": true,
@@ -2286,9 +2286,9 @@
         },
         {
             "type": "armor",
-            "name": "Knight Shield",
+            "name": "骑士盾牌",
             "code": "shield-02",
-            "description": "A weighty slab of iron, dented and scorched by infernal flames.",
+            "description": "沉重的铁盾坑洼不平，带着地狱烈焰灼烧的痕迹。",
             "durability": 500,
             "slot": "weapon",
             "canBeSold": true,
@@ -2314,9 +2314,9 @@
         },
         {
             "type": "armor",
-            "name": "Fire Shield",
+            "name": "火焰盾牌",
             "code": "shield-03",
-            "description": "A scorched barrier of blackened steel, humming with imprisoned embers.",
+            "description": "熏黑钢铁铸成的焦灼屏障，禁锢的余烬在其中嗡鸣。",
             "durability": 700,
             "slot": "weapon",
             "canBeSold": true,
@@ -2343,9 +2343,9 @@
         },
         {
             "type": "armor",
-            "name": "Leather Armor",
+            "name": "皮甲",
             "code": "basic-armor-01",
-            "description": "A pallid cuirass of stitched hide, soaked in the sweat and blood of countless nameless warriors.",
+            "description": "缝皮制成的苍白胸甲，浸透无数无名战士的汗水与鲜血。",
             "durability": 400,
             "slot": "body",
             "canBeSold": true,
@@ -2370,9 +2370,9 @@
         },
         {
             "type": "armor",
-            "name": "Sturdy Armor",
+            "name": "坚固皮甲",
             "code": "armor-01",
-            "description": "A cuirass of boiled leather, bearing the scars of many battles. It creaks with every breath, a reminder of survival.",
+            "description": "煮硬皮革制成的胸甲，满是战痕，每次呼吸都会吱响，提醒你仍活着。",
             "durability": 500,
             "slot": "body",
             "canBeSold": true,
@@ -2401,9 +2401,9 @@
         },
         {
             "type": "armor",
-            "name": "Plate Armor",
+            "name": "板甲",
             "code": "armor-02",
-            "description": "A hulking shell of cold metal plates, hammered from the bones of vanquished giants.",
+            "description": "厚重而冰冷的金属甲壳，仿佛以战败巨人的骸骨锻成。",
             "durability": 700,
             "slot": "body",
             "canBeSold": true,
@@ -2432,9 +2432,9 @@
         },
         {
             "type": "armor",
-            "name": "Knight Armor",
+            "name": "骑士铠甲",
             "code": "armor-03",
-            "description": "An ancient suit of plate warped by eldritch wards, its surface etched with runes that hiss like snakes.",
+            "description": "受诡异结界扭曲的古老板甲，表面符文嘶嘶作响，宛如群蛇。",
             "durability": 1000,
             "slot": "body",
             "canBeSold": true,
@@ -2465,9 +2465,9 @@
         },
         {
             "type": "armor",
-            "name": "Royal Armor",
+            "name": "皇家铠甲",
             "code": "armor-04",
-            "description": "A pristine, gleaming cuirass of masterwork steel, the finest protection a champion can claim in a realm steeped in shadow.",
+            "description": "大师精钢打造、光洁闪耀的胸甲，是勇士在阴影国度能获得的顶级防护。",
             "durability": 1200,
             "slot": "body",
             "canBeSold": true,
@@ -2498,9 +2498,9 @@
         },
         {
             "type": "armor",
-            "name": "Cursed Armor",
+            "name": "诅咒铠甲",
             "code": "cursed-armor-01",
-            "description": "A corroded suit of mail that clings to its wearer with the cold malice of an ancient curse.",
+            "description": "腐蚀的锁甲带着古老诅咒的冰冷恶意，紧紧附着于穿戴者。",
             "durability": 600,
             "slot": "body",
             "canBeSold": true,
@@ -2532,9 +2532,9 @@
         },
         {
             "type": "armor",
-            "name": "Shadow Hood",
+            "name": "暗影兜帽",
             "code": "shadow-hood-01",
-            "description": "A dark hood that veils the wearer's face, swallowing their features in a fold of shadow.",
+            "description": "深色兜帽遮住面容，将五官吞入阴影的褶皱之中。",
             "durability": 500,
             "slot": "head",
             "canBeSold": true,
@@ -2567,8 +2567,8 @@
         },
         {
             "type": "armor",
-            "name": "Witch Hat",
-            "description": "A pointed hat of woven indigo, its brim embroidered with trembling runes that glow faintly in the darkness.",
+            "name": "女巫帽",
+            "description": "靛蓝织物制成的尖帽，帽檐绣着颤动的符文，在黑暗中微微发光。",
             "code": "sorcerer-hat-01",
             "price": {
                 "coins": 450
@@ -2601,8 +2601,8 @@
         },
         {
             "type": "armor",
-            "name": "Moonlight Hat",
-            "description": "A tall cone of midnight silk, crowned with an emerald that pulses with inner light.",
+            "name": "月光帽",
+            "description": "午夜色丝绸制成的高锥帽，冠上的祖母绿脉动着内在光芒。",
             "code": "sorcerer-hat-02",
             "price": {
                 "coins": 1200,
@@ -2641,8 +2641,8 @@
         },
         {
             "type": "armor",
-            "name": "Mana Neck",
-            "description": "A necklace strung with shards of sapphire, pulsing with arcane energy.",
+            "name": "法力项链",
+            "description": "串着蓝宝石碎片的项链，奥术能量在其中脉动。",
             "code": "necklace-01",
             "price": {
                 "coins": 450
@@ -2668,8 +2668,8 @@
         },
         {
             "type": "armor",
-            "name": "Initiative Neck",
-            "description": "A chain of black iron, worn by those who would seize fate before it seizes them.",
+            "name": "先攻项链",
+            "description": "黑铁链，属于那些想在命运出手前先掌握命运的人。",
             "code": "necklace-02",
             "price": {
                 "coins": 450
@@ -2689,8 +2689,8 @@
         },
         {
             "type": "armor",
-            "name": "Agility Neck",
-            "description": "A slender chain, light as a whisper, granting its wearer the swiftness of a shadow fleeing the dawn.",
+            "name": "敏捷项链",
+            "description": "纤细轻盈的链子，赋予佩戴者如暗影逃离黎明般的速度。",
             "code": "necklace-03",
             "price": {
                 "coins": 450
@@ -2710,8 +2710,8 @@
         },
         {
             "type": "armor",
-            "name": "Stamina Neck",
-            "description": "A choker of charred bone and withered flesh, bound by a cord of shadow-sinew.",
+            "name": "体力项链",
+            "description": "焦骨与枯肉制成的颈圈，以暗影筋腱编成的绳索相连。",
             "code": "necklace-04",
             "price": {
                 "coins": 300
@@ -2731,8 +2731,8 @@
         },
         {
             "type": "armor",
-            "name": "Vitality Neck",
-            "description": "A braided collar of blackened sinew and frostbitten marrow, set with a pulse of slow-burning vitality.",
+            "name": "生命项链",
+            "description": "熏黑筋腱与冻裂骨髓编成的颈圈，镶着缓缓燃烧的生命脉动。",
             "code": "necklace-05",
             "price": {
                 "coins": 500
@@ -2752,8 +2752,8 @@
         },
         {
             "type": "armor",
-            "name": "Luck Neck",
-            "description": "A blackened chain of bone and wyrm-tooth, its pendant a blood-black opal that hums with the cruel favor of fate.",
+            "name": "幸运项链",
+            "description": "兽骨与龙牙串成的黑链，血黑欧泊吊坠轻鸣着命运残酷的眷顾。",
             "code": "necklace-06",
             "price": {
                 "coins": 500
@@ -2773,8 +2773,8 @@
         },
         {
             "type": "armor",
-            "name": "Holy Neck",
-            "description": "A tarnished relic of pale silver, its broken halo etched with prayers that burn against the curse and hold madness at the threshold of the soul.",
+            "name": "神圣项链",
+            "description": "暗淡的银色圣物，破碎光环上刻着祷文，抵御诅咒，将疯狂挡在灵魂之外。",
             "code": "necklace-07",
             "price": {
                 "coins": 550
@@ -2798,8 +2798,8 @@
         },
         {
             "type": "armor",
-            "name": "Student Cloak",
-            "description": "A novice's mantle of deep violet, its threads faintly shimmering with borrowed magic.",
+            "name": "学徒斗篷",
+            "description": "深紫色学徒披风，丝线微微闪耀着借来的魔力。",
             "code": "sorcerer-cloak-01",
             "price": {
                 "coins": 650
@@ -2831,8 +2831,8 @@
         },
         {
             "type": "armor",
-            "name": "Fine Cloak",
-            "description": "A cloak of twilight shadow, worn by those who have tasted true power.",
+            "name": "精制斗篷",
+            "description": "暮光与暗影织成的斗篷，属于尝过真正力量的人。",
             "code": "sorcerer-cloak-02",
             "price": {
                 "coins": 1400
@@ -2871,8 +2871,8 @@
         },
         {
             "type": "armor",
-            "name": "Master Cloak",
-            "description": "A garment of woven starlight and shadow, worn only by those who have mastered the eldritch arts.",
+            "name": "大师斗篷",
+            "description": "由星光与阴影编织的衣袍，只有掌握诡秘法术的大师才能穿戴。",
             "code": "sorcerer-cloak-03",
             "price": {
                 "coins": 2500,
@@ -2921,10 +2921,10 @@
     ],
     "disposable": [
         {
-            "name": "Health Small",
+            "name": "小型生命药水",
             "type": "disposable",
             "code": "health-potion-01",
-            "description": "A vial of crimson elixir, rumored to be distilled from the blood of saints and sinners alike.",
+            "description": "一小瓶绯红灵药，据说由圣者与罪人的鲜血共同提炼。",
             "canBeSold": true,
             "canBeThrownAway": true,
             "modification": [
@@ -2951,10 +2951,10 @@
             }
         },
         {
-            "name": "Health Big",
+            "name": "大型生命药水",
             "type": "disposable",
             "code": "health-potion-02",
-            "description": "A vial of thick crimson essence, swirling with raw vitality torn from the dying moments of forgotten beasts.",
+            "description": "浓稠的绯红精华中涌动着原始生命力，来自被遗忘巨兽临终的瞬间。",
             "canBeSold": true,
             "canBeThrownAway": true,
             "modification": [
@@ -2981,10 +2981,10 @@
             }
         },
         {
-            "name": "Stamina Small",
+            "name": "小型体力药水",
             "type": "disposable",
             "code": "stamina-potion-01",
-            "description": "A flask of bitter draught, brewed by witches in the wild. It fills the weary with a fleeting surge of vigor.",
+            "description": "荒野女巫熬制的苦涩药剂，让疲惫者短暂恢复活力。",
             "canBeSold": true,
             "canBeThrownAway": true,
             "modification": [
@@ -3011,10 +3011,10 @@
             }
         },
         {
-            "name": "Stamina Big",
+            "name": "大型体力药水",
             "type": "disposable",
             "code": "stamina-potion-02",
-            "description": "A potent draught of midnight hue, brewed from the distilled fury of restless spirits and the marrow of fallen titans.",
+            "description": "午夜色的强效药剂，由不安亡魂的怒火与陨落泰坦的骨髓蒸馏而成。",
             "canBeSold": true,
             "canBeThrownAway": true,
             "modification": [
@@ -3041,10 +3041,10 @@
             }
         },
         {
-            "name": "Mana Small",
+            "name": "小型法力药水",
             "type": "disposable",
             "code": "mana-potion-01",
-            "description": "A bottle of shimmering blue liquid, cold as the grave and sharp as a wizard's wit. Restores the mind's arcane fire.",
+            "description": "闪亮的蓝色液体，冷如坟墓、锐如法师心智，重燃心中的奥术之火。",
             "canBeSold": true,
             "canBeThrownAway": true,
             "modification": [
@@ -3071,10 +3071,10 @@
             }
         },
         {
-            "name": "Mana Big",
+            "name": "大型法力药水",
             "type": "disposable",
             "code": "mana-potion-02",
-            "description": "A vessel of swirling indigo essence, distilled from the shattered minds of mad sorcerers and the dying echoes of forbidden incantations.",
+            "description": "旋转的靛蓝精华，由疯法师破碎的心智与禁咒消逝的回声提炼。",
             "canBeSold": true,
             "canBeThrownAway": true,
             "modification": [
@@ -3101,10 +3101,10 @@
             }
         },
         {
-            "name": "Agility Small",
+            "name": "小型敏捷药水",
             "type": "disposable",
             "code": "agility-potion-01",
-            "description": "A draught of quicksilver and shadow, said to grant the swiftness of a midnight fox to those who dare drink.",
+            "description": "水银与暗影调成的药剂，据说能让敢于饮下者获得午夜狐狸般的敏捷。",
             "canBeSold": true,
             "canBeThrownAway": true,
             "modification": [
@@ -3124,10 +3124,10 @@
             }
         },
         {
-            "name": "Agility Big",
+            "name": "大型敏捷药水",
             "type": "disposable",
             "code": "agility-potion-02",
-            "description": "A swirling elixir of liquid mercury and captured shadows, forged from the essence of hunted phantoms and the blood of swift predators.",
+            "description": "液态水银与囚禁暗影旋转交织，取自被猎幽魂的精华与迅捷掠食者的鲜血。",
             "canBeSold": true,
             "canBeThrownAway": true,
             "modification": [
@@ -3147,10 +3147,10 @@
             }
         },
         {
-            "name": "Calming Brew",
+            "name": "镇静药剂",
             "type": "disposable",
             "code": "stress-potion-01",
-            "description": "A bitter draught of moon-ash and blackroot, brewed to still the mind in battle and keep the bearer from slipping into madness.",
+            "description": "月灰与黑根熬成的苦药，使战斗中的心智平静，防止饮用者坠入疯狂。",
             "canBeSold": true,
             "canBeThrownAway": true,
             "modification": [
@@ -3177,10 +3177,10 @@
             }
         },
         {
-            "name": "Poison",
+            "name": "毒药",
             "type": "disposable",
             "code": "poison-01",
-            "description": "A vial of virulent green venom, harvested from the fangs of night serpents. One drop can spell a slow, agonizing death.",
+            "description": "从夜蛇獠牙收集的烈性绿毒，一滴便能带来缓慢而痛苦的死亡。",
             "canBeSold": true,
             "canBeThrownAway": true,
             "damage": [
@@ -3198,10 +3198,10 @@
             }
         },
         {
-            "name": "Bandage",
+            "name": "绷带",
             "type": "disposable",
             "code": "bandage-01",
-            "description": "A strip of linen, stained by old wounds and desperate prayers. Slows the bleeding, if not the pain.",
+            "description": "沾着旧伤血迹与绝望祈祷的亚麻布条，即使不能止痛，也能减缓流血。",
             "canBeSold": true,
             "canBeThrownAway": true,
             "modification": [
@@ -3219,10 +3219,10 @@
             }
         },
         {
-            "name": "Antidote",
+            "name": "解毒剂",
             "type": "disposable",
             "code": "antidote-potion-01",
-            "description": "A silvery draught distilled from moonflowers and sacred earth, a desperate salvation against the creeping death of poison.",
+            "description": "月光花与圣土蒸馏出的银色药剂，是对抗毒素缓慢侵蚀的最后救赎。",
             "canBeSold": true,
             "canBeThrownAway": true,
             "modification": [
@@ -3241,9 +3241,9 @@
         },
         {
             "type": "disposable",
-            "name": "Bomb",
+            "name": "炸弹",
             "code": "bomb-01",
-            "description": "A crude iron sphere packed with black powder and spite. Hurl it into the fray and watch the world burn.",
+            "description": "粗糙的铁球塞满黑火药与恶意。将它掷入战阵，看火焰吞没四周。",
             "canBeSold": true,
             "canBeThrownAway": true,
             "price": {
@@ -3281,10 +3281,10 @@
     ],
     "ammunition": [
         {
-            "name": "Arrow",
+            "name": "箭矢",
             "type": "ammunition",
             "code": "arrow-01",
-            "description": "A simple arrow, its iron tip dulled by rain and time. Still, it finds flesh when loosed by a steady hand.",
+            "description": "普通的箭，铁箭头被雨水与岁月磨钝，但在稳健的弓手手中仍能命中血肉。",
             "kind": "arrow",
             "canBeSold": true,
             "canBeThrownAway": true,
@@ -3305,10 +3305,10 @@
             }
         },
         {
-            "name": "Fire Arrow",
+            "name": "火箭",
             "type": "ammunition",
             "code": "arrow-fire-01",
-            "description": "An arrow wrapped in pitch and set alight, trailing embers as it seeks its mark. Its fire is as merciless as its steel.",
+            "description": "裹着沥青并点燃的箭，拖着余烬追逐目标，火焰与钢铁一样无情。",
             "kind": "arrow",
             "canBeSold": true,
             "canBeThrownAway": true,
@@ -3330,10 +3330,10 @@
             }
         },
         {
-            "name": "Frost Arrow",
+            "name": "冰霜箭",
             "type": "ammunition",
             "code": "arrow-frost-01",
-            "description": "An arrow rimed with hoarfrost, its chill biting deeper than steel. It leaves wounds that never truly warm.",
+            "description": "覆盖白霜的箭，寒意比钢铁刺得更深，留下难以暖回的伤口。",
             "kind": "arrow",
             "canBeSold": true,
             "canBeThrownAway": true,
@@ -3355,10 +3355,10 @@
             }
         },
         {
-            "name": "Light Arrow",
+            "name": "雷光箭",
             "type": "ammunition",
             "code": "arrow-lightning-01",
-            "description": "An arrow tipped with a shard of storm, crackling with barely contained lightning. Its strike is swift and blinding.",
+            "description": "箭头镶着风暴碎片，难以压制的闪电噼啪作响，命中迅疾而耀眼。",
             "kind": "arrow",
             "canBeSold": true,
             "canBeThrownAway": true,
@@ -3380,10 +3380,10 @@
             }
         },
         {
-            "name": "Poison Arrow",
+            "name": "毒箭",
             "type": "ammunition",
             "code": "arrow-poison-01",
-            "description": "A slender shaft crowned with venom, carrying a slow and merciless death into the dark.",
+            "description": "纤细箭杆顶着剧毒，将缓慢无情的死亡带入黑暗。",
             "kind": "arrow",
             "canBeSold": true,
             "canBeThrownAway": true,
@@ -3403,10 +3403,10 @@
             }
         },
         {
-            "name": "Acid Charge",
+            "name": "酸液弹",
             "type": "ammunition",
             "code": "acid-charge-01",
-            "description": "A glass vial brimming with venomous mist, meant for a sorcerer's staff. Its touch brings a slow, inevitable demise.",
+            "description": "装满毒雾的玻璃瓶，供法师的法杖使用，接触后带来缓慢而不可避免的死亡。",
             "kind": "magicCharge",
             "canBeSold": true,
             "canBeThrownAway": true,
@@ -3427,10 +3427,10 @@
             }
         },
         {
-            "name": "Fire Charge",
+            "name": "火焰弹",
             "type": "ammunition",
             "code": "fire-charge-01",
-            "description": "A flask of burning essence, used to fuel a sorcerer's wrath. It bursts into flame with a whisper of the old tongue.",
+            "description": "装着燃烧精华的药瓶，为法师的怒火提供燃料，一声古语便能将其点燃。",
             "kind": "magicCharge",
             "canBeSold": true,
             "canBeThrownAway": true,
@@ -3451,10 +3451,10 @@
             }
         },
         {
-            "name": "Fire Charge",
+            "name": "火焰弹",
             "type": "ammunition",
             "code": "fire-charge-02",
-            "description": "A dragon's breath, captured in a fragile vessel. When unleashed, it scorches all in its path.",
+            "description": "脆弱容器中囚禁着龙息，释放后会烧焦沿途的一切。",
             "kind": "magicCharge",
             "canBeSold": true,
             "canBeThrownAway": true,
@@ -3475,10 +3475,10 @@
             }
         },
         {
-            "name": "Cold Charge",
+            "name": "寒冰弹",
             "type": "ammunition",
             "code": "cold-charge-01",
-            "description": "A crystal of eternal frost, humming with the promise of winter's bite. It chills the soul as well as the flesh.",
+            "description": "永冻水晶嗡鸣着凛冬的寒意，既冰冻肉体，也冰冻灵魂。",
             "kind": "magicCharge",
             "canBeSold": true,
             "canBeThrownAway": true,
@@ -3499,10 +3499,10 @@
             }
         },
         {
-            "name": "Light Charge",
+            "name": "雷光弹",
             "type": "ammunition",
             "code": "lightning-charge-01",
-            "description": "A vial of bottled lightning, restless and wild. It crackles with the fury of a midnight storm.",
+            "description": "瓶中封存着狂野不安的闪电，迸发着午夜风暴的怒火。",
             "kind": "magicCharge",
             "canBeSold": true,
             "canBeThrownAway": true,
@@ -3523,10 +3523,10 @@
             }
         },
         {
-            "name": "Magic Crystal",
+            "name": "魔法水晶",
             "type": "ammunition",
             "code": "magic-crystal-01",
-            "description": "A shard of cold, resonant crystal. It channels arcane power into the hands of those who dare to wield forbidden magic weapon.",
+            "description": "冰冷共鸣的水晶碎片，将奥术力量导入敢于使用禁忌魔法武器者的手中。",
             "kind": "magicCrystal",
             "canBeSold": true,
             "canBeThrownAway": true,
@@ -3538,8 +3538,8 @@
     "provision": [
         {
             "type": "provision",
-            "name": "Ham",
-            "description": "A slab of smoked ham, its savory scent a fleeting comfort in a world of hunger and hardship. Restores strength to the weary.",
+            "name": "火腿",
+            "description": "一块烟熏火腿，香味为饥饿而艰苦的世界带来片刻慰藉，帮助疲惫者恢复力量。",
             "code": "provision-ham-01",
             "canBeThrownAway": true,
             "canBeSold": true,
@@ -3552,8 +3552,8 @@
         },
         {
             "type": "provision",
-            "name": "Wine",
-            "description": "A bottle of deep red wine, swirling with the memories of forgotten revels. Its warmth stirs the soul and sharpens the mind.",
+            "name": "葡萄酒",
+            "description": "一瓶深红葡萄酒，旋转着旧日欢宴的记忆；温热酒意振奋灵魂、使心智清明。",
             "code": "provision-wine-01",
             "canBeThrownAway": true,
             "canBeSold": true,
@@ -3566,8 +3566,8 @@
         },
         {
             "type": "provision",
-            "name": "Fried Rice",
-            "description": "A rare treat of fried rice, speckled with morsels of meat and herbs. A banquet for the fortunate, a memory for the lost.",
+            "name": "炒饭",
+            "description": "难得的炒饭，点缀着肉丁与香草，是幸运者的盛宴，也是失落者的回忆。",
             "code": "provision-fried-rice-01",
             "canBeThrownAway": true,
             "canBeSold": true,
@@ -3581,8 +3581,8 @@
         },
         {
             "type": "provision",
-            "name": "Beer",
-            "description": "A bitter brew of malt and midnight, brewed for those who would dull the ache of a haunted heart. One sip stifles the dread, if only for a while.",
+            "name": "啤酒",
+            "description": "麦芽与午夜酿成的苦酒，献给想减轻心中阴影之痛的人；一口就能暂时压下恐惧。",
             "code": "provision-beer-01",
             "canBeThrownAway": true,
             "canBeSold": true,

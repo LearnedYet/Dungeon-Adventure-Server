@@ -1,8 +1,8 @@
 [
     {
         "code": "quest-training",
-        "name": "Training",
-        "description": "Before facing your enemies, you must complete your training. Master the basic skills before the darkness beyond the gates learns your name.",
+        "name": "基础训练",
+        "description": "面对敌人之前，先完成训练。在城门之外的黑暗知晓你的名字前，掌握基本技巧。",
         "reward": {
             "experience": 50
         },
@@ -21,8 +21,8 @@
     },
     {
         "code": "quest-first-blood",
-        "name": "Prove yourself",
-        "description": "Prove yourself by descending into the first floor of a dungeon's shadowed maw and clawing your way back into the world with your precious life intact.",
+        "name": "证明自己",
+        "description": "深入地下城阴暗的第一层，再拼尽全力活着返回，用行动证明自己。",
         "reward": {
             "coins": 100,
             "experience": 250
@@ -45,8 +45,8 @@
     },
     {
         "code": "quest-kill-5-slimes",
-        "name": "Kill 5 Slimes",
-        "description": "The Hunters Guild whispers of a wicked ooze festering in the drowned marshes. Five leering slimes must be purged before their corrosive taint devours the land and the shadowed hunger spreads beyond the fetid bog.",
+        "name": "击杀 5 只史莱姆",
+        "description": "猎人公会传来消息：淹水沼泽中滋生着邪恶黏液。必须清除五只狰狞史莱姆，阻止腐蚀污染吞噬土地、让阴影中的饥饿蔓延出恶臭泥潭。",
         "reward": {
             "coins": 300,
             "experience": 500
@@ -69,8 +69,8 @@
     },
     {
         "code": "quest-kill-10-rats",
-        "name": "Kill 10 Rats",
-        "description": "The Hunters Guild sounds an urgent call. A vile infestation of grotesque vermin plagues the lower dungeons. Cull their numbers to stem the spreading blight before darkness consumes all.",
+        "name": "击杀 10 只巨鼠",
+        "description": "猎人公会紧急求援：地下城下层已被丑恶鼠群侵占。削减它们的数量，在黑暗吞噬一切之前遏制蔓延的灾祸。",
         "reward": {
             "coins": 400,
             "experience": 750
@@ -93,8 +93,8 @@
     },
     {
         "code": "quest-kill-10-slimes",
-        "name": "Kill 10 Slimes",
-        "description": "The Hunters Guild warns the slime outbreak is worsening as the cursed marsh swells with corrupted ooze. Hunt down ten of these writhing masses before their toxic seepage swallows the paths and spreads decay through the lowlands.",
+        "name": "击杀 10 只史莱姆",
+        "description": "猎人公会警告，受诅沼泽中的腐化黏液正在扩张，史莱姆灾情愈发严重。猎杀十只蠕动怪物，防止毒液淹没道路、让低地尽数腐败。",
         "reward": {
             "coins": 600,
             "experience": 1000
@@ -117,8 +117,8 @@
     },
     {
         "code": "quest-kill-20-rats",
-        "name": "Kill 20 Rats",
-        "description": "The darkness grows deeper still. The Hunters Guild pleads for your aid once more. The rat plague consumes the shadows below without mercy. Eradicate them completely, or their corruption will breach the mortal realm.",
+        "name": "击杀 20 只巨鼠",
+        "description": "黑暗越发深重，猎人公会再次请求援助。鼠患正无情吞噬地下的阴影；若不彻底清除，腐化终将侵入凡人的世界。",
         "reward": {
             "coins": 800,
             "experience": 1300
@@ -141,8 +141,8 @@
     },
     {
         "code": "quest-kill-10-snakes",
-        "name": "Kill 10 Snakes",
-        "description": "The Hunters Guild beseeches you to purge the haunted marshland of lethal serpents. Ten coils of venomous shadow must be severed before their hypnotic fangs drag more souls into the abyss.",
+        "name": "击杀 10 条毒蛇",
+        "description": "猎人公会请求你清除闹鬼沼泽中的致命毒蛇。消灭十条毒蛇，防止它们的尖牙把更多灵魂拖进深渊。",
         "reward": {
             "coins": 400,
             "experience": 1200
@@ -165,8 +165,8 @@
     },
     {
         "code": "quest-kill-10-fleas",
-        "name": "Kill 10 Fleas",
-        "description": "A swarm of bloodthirsty horrors descends upon the shadowed marshes. The Hunters Guild demands you slay ten of these vampiric fiends before their insatiable hunger drains the life from the land itself. Strike swiftly, for their buzzing heralds the coming of greater plagues.",
+        "name": "击杀 10 只巨蚤",
+        "description": "嗜血怪物成群降临幽暗沼泽。猎人公会要求消灭十只吸血恶物，避免它们无尽的饥饿抽干大地的生命。迅速出击，它们的嗡鸣预示着更大的灾祸。",
         "reward": {
             "coins": 700,
             "experience": 1500
@@ -189,8 +189,8 @@
     },
     {
         "code": "quest-kill-10-toads",
-        "name": "Kill 10 Toads",
-        "description": "A foul chorus echoes from the swamp where corrupted toads breed beneath the moon. The Hunters Guild orders you to slay ten of these bloated beasts before their venomous spawn poisons the nearby villages and the stench attracts even darker horrors.",
+        "name": "击杀 10 只蟾蜍",
+        "description": "月下沼泽里，腐化蟾蜍繁衍，污秽的合唱不断回响。猎人公会命令消灭十只臃肿巨兽，以免毒性后代危害附近村庄、恶臭引来更黑暗的怪物。",
         "reward": {
             "coins": 800,
             "experience": 2000
@@ -213,8 +213,8 @@
     },
     {
         "code": "quest-kill-20-bats",
-        "name": "Kill 20 Bats",
-        "description": "The cavern echoes with the frantic flutter of leathery wings. A colony of bloodthirsty bats has overrun the upper tunnels, their piercing screeches driving miners to madness. The Hunters Guild demands you thin their numbers by twenty before their swarm consumes the light entirely.",
+        "name": "击杀 20 只蝙蝠",
+        "description": "洞窟里回荡着皮翼急振的声响，嗜血蝙蝠占据上层隧道，尖叫使矿工发狂。猎人公会要求消灭二十只，在蝠群彻底吞没光明之前控制数量。",
         "reward": {
             "coins": 700,
             "experience": 1000
@@ -237,8 +237,8 @@
     },
     {
         "code": "quest-find-artifact-01",
-        "name": "Find Cursed Goblet",
-        "description": "The Adventurers Guild seeks a perilous relic: the Cursed Goblet. An artifact of forbidden power lost beneath the Forgotten Ruins. Venture into the third level's shadowed depths to claim it, if the ancient darkness permits your return.",
+        "name": "寻找诅咒圣杯",
+        "description": "冒险者公会正在寻找危险的遗物：诅咒圣杯。这件拥有禁忌之力的神器遗失在遗忘废墟之下。前往第三层幽暗深处取回它，若古老黑暗愿意放你归来。",
         "reward": {
             "coins": 800,
             "experience": 2000
@@ -261,8 +261,8 @@
     },
     {
         "code": "quest-find-artifact-02",
-        "name": "Find Sinister Skull",
-        "description": "Deep within the Cursed Swamp lies a relic of pure malice, the Sinister Skull. An artifact that whispers dark incantations to those who draw near. The Adventurers Guild commands you to retrieve it from the fourth level's mire, where death itself seems to breathe.",
+        "name": "寻找邪恶颅骨",
+        "description": "诅咒沼泽深处藏着纯粹恶意的遗物：邪恶颅骨。它会向靠近者低吟黑暗咒语。冒险者公会命令你从第四层泥潭取回它，那里仿佛连死亡都在呼吸。",
         "reward": {
             "coins": 900,
             "experience": 4000
@@ -285,8 +285,8 @@
     },
     {
         "code": "quest-find-artifact-09",
-        "name": "Find Eldritch Heart",
-        "description": "The Adventurers Guild sends you into the black heart of the Demonic Forest to recover the Eldritch Heart, a living relic pulsing with forbidden power beneath the fourth floor's twisted roots and moonless shadows.",
+        "name": "寻找诡秘之心",
+        "description": "冒险者公会派你深入恶魔森林，寻找诡秘之心。这件活体遗物在第四层扭曲树根与无月阴影之下，脉动着禁忌力量。",
         "reward": {
             "coins": 1000,
             "experience": 5000
@@ -309,8 +309,8 @@
     },
     {
         "code": "quest-find-artifact-04",
-        "name": "Find Amulet of Ultimate Evil",
-        "description": "The Amulet of Ultimate Evil pulses with forbidden power in the depths of the Forgotten Ruins. This cursed talisman, forged in the fires of damnation, corrupts the soul of any who wear it. The Adventurers Guild demands you retrieve it from the fourth level's labyrinthine shadows, but beware its insidious whispers.",
+        "name": "寻找至恶护符",
+        "description": "至恶护符在遗忘废墟深处脉动着禁忌之力。这件在诅咒烈火中锻成的护符会腐化佩戴者的灵魂。冒险者公会要求从第四层迷宫般的阴影中取回它，务必警惕它阴险的低语。",
         "reward": {
             "coins": 1000,
             "ruby": 5,
@@ -334,8 +334,8 @@
     },
     {
         "code": "quest-kill-10-ghosts",
-        "name": "Kill 10 Cursing Ghosts",
-        "description": "The Hunters Guild seeks a brave soul to lay ten vengeful spirits to rest before their curses spread through the living. Their mournful wails have already driven whole hamlets to madness.",
+        "name": "击杀 10 只诅咒幽灵",
+        "description": "猎人公会寻找勇敢之人，让十个复仇亡灵安息，阻止诅咒传向生者。它们凄厉的哀号已使整座村庄陷入疯狂。",
         "reward": {
             "coins": 1100,
             "experience": 3500
@@ -358,8 +358,8 @@
     },
     {
         "code": "quest-kill-10-skeletons",
-        "name": "Kill 10 Skeletons",
-        "description": "Bone-chilling winds carry the clatter of rattling armor from the ancient crypts. Skeletal warriors, animated by dark necromancy, patrol the forgotten halls. The Hunters Guild requires you to shatter ten of these undead guardians before their bony grasp claims more victims.",
+        "name": "击杀 10 具骷髅",
+        "description": "刺骨寒风带来古墓中铠甲碰撞的声响。黑暗死灵术唤醒了骷髅战士，让它们巡逻于被遗忘的大厅。猎人公会要求击碎十个不死守卫，防止更多人遭其毒手。",
         "reward": {
             "coins": 1200,
             "experience": 4000
@@ -382,8 +382,8 @@
     },
     {
         "code": "quest-kill-10-zombies",
-        "name": "Kill 10 Zombies",
-        "description": "The stench of decay permeates the marshlands as shambling corpses rise from their watery graves. These rotting horrors, driven by unholy hunger, threaten to overrun the villages. The Hunters Guild commands you to destroy ten of these abominations before their plague spreads further.",
+        "name": "击杀 10 只僵尸",
+        "description": "腐臭弥漫沼泽，蹒跚尸体从水墓中爬起。这些被不洁饥饿驱动的腐烂怪物威胁着村庄。猎人公会命令消灭十只，防止瘟疫进一步扩散。",
         "reward": {
             "coins": 900,
             "experience": 4000
@@ -406,8 +406,8 @@
     },
     {
         "code": "quest-kill-10-goblins",
-        "name": "Kill 10 Goblins",
-        "description": "Cackling laughter echoes from the twisted forests where goblin tribes plot their mischief. These cunning green-skinned raiders, armed with crude weapons and wicked traps, terrorize travelers and steal livestock. The Hunters Guild demands you eliminate ten of these pestilent creatures to restore peace to the woodland paths.",
+        "name": "击杀 10 只哥布林",
+        "description": "扭曲森林中回荡着怪笑，哥布林部落正在谋划恶作剧。狡诈的绿皮劫掠者拿着粗制武器、布置恶毒陷阱，恐吓旅人、偷走牲畜。猎人公会要求消灭十只，恢复林间小径的安宁。",
         "reward": {
             "coins": 1000,
             "ruby": 5,
@@ -432,8 +432,8 @@
     },
     {
         "code": "quest-kill-5-fire-skulls",
-        "name": "Crack 5 Fire Skulls",
-        "description": "The Hunters Guild calls for five blazing skulls to be shattered, lest their unholy flames consume the land. Each one is said to bear the last spiteful thought of a damned soul.",
+        "name": "击碎 5 颗烈焰骷髅",
+        "description": "猎人公会要求击碎五颗燃烧的骷髅，以免不洁火焰吞噬大地。据说每一颗都承载着受诅灵魂最后的怨念。",
         "reward": {
             "coins": 1100,
             "ruby": 5,
@@ -457,8 +457,8 @@
     },
     {
         "code": "quest-find-artifact-05",
-        "name": "Find Runes of Chaos",
-        "description": "The Runes of Chaos lie hidden within the treacherous mire of the Cursed Swamp. Ancient symbols etched in blood, capable of unraveling reality itself. The Adventurers Guild tasks you with claiming them from the fifth level's suffocating depths, where madness and magic intertwine.",
+        "name": "寻找混沌符文",
+        "description": "混沌符文藏在诅咒沼泽危险的泥潭中。这些以血刻成的古老符号足以瓦解现实。冒险者公会派你前往第五层令人窒息的深处，在疯狂与魔法纠缠之地夺回它们。",
         "reward": {
             "coins": 1400,
             "ruby": 5,
@@ -482,8 +482,8 @@
     },
     {
         "code": "quest-find-artifact-11",
-        "name": "Find Golden Apple",
-        "description": "The witch's Golden Apple is said to bloom in the deepest, most cursed reaches of the Demonic Forest. Brave the fifth floor, where thorned ruins and sorcerous fog hide a prize that could awaken something ancient and hungry.",
+        "name": "寻找金苹果",
+        "description": "传说女巫的金苹果生长在恶魔森林最深、诅咒最重的地方。勇闯第五层，在荆棘废墟与魔雾之间寻找这件珍宝，但它可能唤醒某种古老而饥饿的存在。",
         "reward": {
             "coins": 1500,
             "experience": 5000
@@ -506,8 +506,8 @@
     },
     {
         "code": "quest-kill-grim-reaper",
-        "name": "Defeat the Grim Reaper",
-        "description": "Descend into the deepest chasm of the Forgotten Ruins, where cold shadow and the scent of old grave earth cling to every step. There the Grim Reaper waits beneath a veil of black mist, a deathless wraith whose scythe rends both body and soul. Steel your courage and strike true, for only by shattering its endless harvest can the land be spared another night of endless mourning.",
+        "name": "击败死神",
+        "description": "深入遗忘废墟最底层的深渊，冰冷阴影与旧墓土的气息缠绕着每一步。死神在黑雾下等待，镰刀能撕裂肉体与灵魂。鼓起勇气，准确出击；只有终结这无休止的收割，才能使大地免于又一夜无尽哀恸。",
         "reward": {
             "coins": 1500,
             "ruby": 5,
@@ -531,8 +531,8 @@
     },
     {
         "code": "quest-kill-10-griffins",
-        "name": "Kill 10 Griffins",
-        "description": "The Hunters Guild demands the slaughter of ten griffins circling the storm-battered cliffs, their talons sharp as cursed iron and their cries like harbingers of doom.",
+        "name": "击杀 10 只狮鹫",
+        "description": "猎人公会要求消灭十只盘旋在风暴悬崖上的狮鹫。它们利爪如受诅铁器，叫声仿佛灾厄将至的预兆。",
         "reward": {
             "coins": 1200,
             "experience": 6000
@@ -555,8 +555,8 @@
     },
     {
         "code": "quest-kill-10-manticores",
-        "name": "Kill 10 Manticores",
-        "description": "A brood of manticores prowls the shattered wastelands, their venomous spines and lion's maws leaving a trail of dread. Eradicate ten before the beasts turn the frontier into a graveyard.",
+        "name": "击杀 10 只蝎尾狮",
+        "description": "一群蝎尾狮游荡于破碎荒原，毒刺与狮口沿途播下恐惧。在它们将边境化作墓地之前，消灭十只。",
         "reward": {
             "coins": 1300,
             "experience": 6500
@@ -579,8 +579,8 @@
     },
     {
         "code": "quest-kill-5-demonic-boars",
-        "name": "Kill 5 Demonic Boars",
-        "description": "The Demonic Boars of the wild taint the earth with black tusks and infernal rage. Hunt five of these savage monsters before their stampede tears through the last surviving villages.",
+        "name": "击杀 5 只恶魔野猪",
+        "description": "荒野的恶魔野猪以漆黑獠牙与地狱怒火污染土地。猎杀五只凶兽，防止兽潮踏碎最后幸存的村庄。",
         "reward": {
             "coins": 1500,
             "ruby": 5,
@@ -604,8 +604,8 @@
     },
     {
         "code": "quest-kill-5-demonic-wolfs",
-        "name": "Kill 5 Demonic Wolves",
-        "description": "The moonlit trails are haunted by demonic wolves with eyes like dying embers. Slay five of the pack to quiet the whispering terror in the forest shadows.",
+        "name": "击杀 5 只恶魔狼",
+        "description": "月光小径上出没着恶魔狼，双眼如将熄的余烬。消灭其中五只，让林影中低语的恐惧归于沉寂。",
         "reward": {
             "coins": 1600,
             "ruby": 5,
@@ -629,8 +629,8 @@
     },
     {
         "code": "quest-kill-5-wendigo",
-        "name": "Kill 5 Wendigo",
-        "description": "Hungry spirits wander the frostbitten woods in the shape of Wendigo, their hunger for flesh a curse as old as the night. Cut down five and deny the wilderness another feast.",
+        "name": "击杀 5 只温迪戈",
+        "description": "饥饿亡魂化作温迪戈，游荡在霜冻森林。它们对血肉的渴望是如黑夜般古老的诅咒。斩杀五只，阻止荒野再度饱餐。",
         "reward": {
             "coins": 1700,
             "ruby": 5,
@@ -655,8 +655,8 @@
     },
     {
         "code": "quest-kill-20-orcs",
-        "name": "Kill 20 Orcs",
-        "description": "The orc hordes are gathering in the dark, their war drums shaking the earth. Cut down twenty raiders before their invasion turns the realm into a slaughter field.",
+        "name": "击杀 20 名兽人",
+        "description": "兽人大军在黑暗中集结，战鼓震动大地。在入侵把王国化作屠场之前，消灭二十名劫掠者。",
         "reward": {
             "coins": 1500,
             "ruby": 5,
@@ -681,8 +681,8 @@
     },
     {
         "code": "quest-kill-5-orc-necromancers",
-        "name": "Kill 5 Orc Necromancers",
-        "description": "Dark sorcery twists the orc camp into a graveyard of bone and ash. Destroy five necromancers before they raise the dead to serve the horde's dread ambitions.",
+        "name": "击杀 5 名兽人死灵法师",
+        "description": "黑暗法术把兽人营地变成骨灰遍地的墓场。消灭五名死灵法师，阻止他们唤起亡者、实现军团的恐怖野心。",
         "reward": {
             "coins": 1300,
             "ruby": 5,
@@ -706,8 +706,8 @@
     },
     {
         "code": "quest-kill-10-demons",
-        "name": "Kill 10 Demons",
-        "description": "From the depths of the abyss, infernal demons breach the veil between worlds. Their flaming forms and malevolent auras corrupt everything they touch. The Hunters Guild, in desperation, calls upon you to banish ten of these hellish invaders before their demonic influence consumes the realm.",
+        "name": "击杀 10 只恶魔",
+        "description": "地狱恶魔从深渊突破世界间的帷幕，燃烧的身形与恶意气息腐化所触及的一切。绝望的猎人公会请求你放逐十个入侵者，阻止恶魔力量吞没王国。",
         "reward": {
             "coins": 1500,
             "ruby": 8,
@@ -731,8 +731,8 @@
     },
     {
         "code": "quest-kill-5-trolls",
-        "name": "Kill 5 Trolls",
-        "description": "The Adventurers Guild calls for the slaughter of five northern trolls before their brute strength tears through the mountain passes. These ancient brutes stalk the snowbound wastes with hunger and malice, leaving broken roads and bloodied villages in their wake. Bring down their hulking forms, and the frontier may yet endure one more winter.",
+        "name": "击杀 5 只巨魔",
+        "description": "冒险者公会要求消灭五只北地巨魔，防止它们以蛮力摧毁山口。古老巨兽带着饥饿与恶意穿行雪原，留下断路与血染村庄。击倒它们，边境才有希望再熬过一个冬天。",
         "reward": {
             "coins": 1300,
             "ruby": 5,
@@ -756,8 +756,8 @@
     },
     {
         "code": "quest-find-artifact-08",
-        "name": "Find Bloody Goblet",
-        "description": "The Adventurers Guild sends you into the Orcs Camp to recover the Bloody Goblet, a relic stained with forgotten oaths and the blood of fallen kings hidden on the fourth floor.",
+        "name": "寻找染血圣杯",
+        "description": "冒险者公会派你深入兽人营地，寻找藏在第四层的染血圣杯。这件遗物沾着被遗忘的誓言与陨落君王的鲜血。",
         "reward": {
             "coins": 1500,
             "experience": 6000
@@ -780,8 +780,8 @@
     },
     {
         "code": "quest-find-artifact-06",
-        "name": "Find Scroll of Eternal Darkness",
-        "description": "The Scroll of Eternal Darkness awaits in the abyssal heart of the Forgotten Ruins. A parchment inscribed with incantations that summon perpetual night. The Adventurers Guild commands you to seize it from the fifth level's eternal gloom, lest its power extinguishes the light forever.",
+        "name": "寻找永暗卷轴",
+        "description": "永暗卷轴在遗忘废墟的深渊中心等待，其上咒文可以召来永恒黑夜。冒险者公会命令你从第五层的无尽幽暗中夺回它，以免其力量永远熄灭光明。",
         "reward": {
             "coins": 1500,
             "ruby": 5,
@@ -805,8 +805,8 @@
     },
     {
         "code": "quest-kill-hydra",
-        "name": "Defeat the Hydra",
-        "description": "Venture into the drowned heart of the Cursed Swamp, where black waters boil with venom and the air hangs heavy with rot. There the Hydra's many eyes gleam like dying embers from beneath a crown of writhing heads, each strike a storm of fangs and acid. Slay this primordial horror before its blood-black tide swallows the marshlands whole and the world's last flicker of hope is lost to its ravenous hunger.",
+        "name": "击败九头蛇",
+        "description": "进入诅咒沼泽被水淹没的中心，毒液使黑水翻滚，空气充满腐败气息。九头蛇的众目如将熄余烬，在蠕动的头颅下闪烁，每次攻击都掀起獠牙与酸液的风暴。杀死这远古怪物，别让血黑洪潮淹没沼泽、让世界最后的希望葬于无尽饥饿。",
         "reward": {
             "coins": 2000,
             "ruby": 10,
@@ -830,8 +830,8 @@
     },
     {
         "code": "quest-find-artifact-10",
-        "name": "Find Magic Chest",
-        "description": "A forgotten treasure chest rests behind the iron walls of the Orcs Camp, its runes crackling with eldritch power. Seize the Magic Chest from the fifth floor before the war host claims it for their dark rituals.",
+        "name": "寻找魔法宝箱",
+        "description": "被遗忘的宝箱藏在兽人营地的铁壁之后，符文迸发着诡异力量。从第五层夺回魔法宝箱，别让军团将它用于黑暗仪式。",
         "reward": {
             "coins": 1700,
             "experience": 7000
@@ -854,8 +854,8 @@
     },
     {
         "code": "quest-kill-forest-witch",
-        "name": "Defeat the Forest Witch",
-        "description": "Beneath the roots of the Demonic Forest, the Forest Witch stirs a ritual of blood and thunder. Defeat her before she summons a legion of demons to devour the world in shadow.",
+        "name": "击败森林女巫",
+        "description": "恶魔森林树根之下，森林女巫正在酝酿鲜血与雷鸣的仪式。在她召来恶魔大军、让阴影吞噬世界之前击败她。",
         "reward": {
             "coins": 3000,
             "ruby": 15,
@@ -879,8 +879,8 @@
     },
     {
         "code": "quest-find-artifact-03",
-        "name": "Find Seekers Book",
-        "description": "The Seekers Book awaits in the abyssal depths of the Dragon's Lair. A tome bound in shadow itself, containing forbidden knowledge that mortals were never meant to possess. Descend to the fifth level and claim it, if your mind can bear the weight of such terrible truths.",
+        "name": "寻找探寻者之书",
+        "description": "探寻者之书在巨龙巢穴的深渊中等待。书皮由阴影束成，记载着凡人不该知晓的禁忌知识。下到第五层夺回它，前提是你的心智能承受这些可怕真相。",
         "reward": {
             "coins": 1200,
             "experience": 6000
@@ -903,8 +903,8 @@
     },
     {
         "code": "quest-kill-orc-commander",
-        "name": "Defeat the Orc Commander",
-        "description": "Break through the Orcs Camp and slay the Orc Commander, the iron-handed tyrant who keeps the war host united. If he stands, the horde's march will drown the realm in fire and fear.",
+        "name": "击败兽人统帅",
+        "description": "突破兽人营地，杀死以铁腕凝聚军团的兽人统帅。只要他还活着，部落的进军就会让王国陷入烈火与恐惧。",
         "reward": {
             "coins": 3000,
             "ruby": 15,
@@ -928,8 +928,8 @@
     },
     {
         "code": "quest-find-artifact-07",
-        "name": "Find Orb of Dragon King",
-        "description": "The Orb of Dragon King rests in the fiery bowels of the Dragon's Lair. A crystalline sphere containing the essence of draconic supremacy, capable of commanding legions of scaled beasts. The Adventurers Guild calls upon you to wrest it from the sixth level's volcanic forge, where ancient wyrms guard their most precious treasure.",
+        "name": "寻找龙王宝珠",
+        "description": "龙王宝珠藏在巨龙巢穴的烈焰深处，水晶球蕴含巨龙至尊的精华，足以号令成群鳞甲巨兽。冒险者公会要求你深入第六层的火山熔炉，从远古巨龙守护的珍宝中夺取它。",
         "reward": {
             "coins": 1700,
             "ruby": 10,
@@ -956,8 +956,8 @@
     },
     {
         "code": "quest-save-princess",
-        "name": "Defeat the Dragon and save the Princess",
-        "description": "The Dragon holds the Princess captive within his molten throne room, her fate bound by flame and shadow. Break through his lair, defeat the ancient wyrm, and free her from the terror that grips the realm.",
+        "name": "击败巨龙并救出公主",
+        "description": "巨龙将公主囚禁在熔岩王座大厅，她的命运被烈焰与阴影束缚。突破巢穴，击败远古巨龙，解救公主，让王国摆脱恐怖的掌控。",
         "reward": {
             "coins": 10000,
             "ruby": 50,

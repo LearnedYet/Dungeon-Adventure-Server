@@ -2,10 +2,10 @@
     {
         "config": {
             "id": "scenario-training",
-            "name": "Training Camp",
+            "name": "训练营",
             "capacity": 1,
             "timer": false,
-            "description": "A quiet camp where new adventurers learn the art of battle.",
+            "description": "一处安静的营地，新冒险者在这里学习战斗技巧。",
             "requirements": {
                 "quests": {
                     "quest-training": "active"
@@ -14,7 +14,7 @@
         },
         "spots": {
             "1-0": {
-                "name": "Training Camp",
+                "name": "训练营",
                 "code": "training-01",
                 "booty": [
                     {
@@ -107,8 +107,8 @@
     {
         "config": {
             "id": "scenario-forgotten-ruins",
-            "name": "Forgotten Ruins",
-            "description": "Dust-choked halls whisper with the memory of fallen kings, and every broken pillar hides a curse. The ruins hold the dead in silence, waiting for the next fool to disturb their rest.",
+            "name": "遗忘废墟",
+            "description": "满是尘埃的大厅低语着陨落君王的往事，每根断柱后都藏着诅咒。废墟让亡者静默安眠，等待下一个扰乱其安息的愚人。",
             "capacity": 4,
             "timer": true,
             "requirements": {
@@ -120,7 +120,7 @@
         },
         "spots": {
             "1-0": {
-                "name": "Forgotten Ruins",
+                "name": "遗忘废墟",
                 "code": "forgotten-ruins-01",
                 "booty": [
                     {
@@ -181,7 +181,7 @@
                 }
             },
             "1-1": {
-                "name": "Forgotten Ruins",
+                "name": "遗忘废墟",
                 "code": "forgotten-ruins-01",
                 "booty": [
                     {
@@ -242,7 +242,7 @@
                 }
             },
             "1-2": {
-                "name": "Forgotten Ruins",
+                "name": "遗忘废墟",
                 "code": "forgotten-ruins-01",
                 "booty": [
                     {
@@ -303,7 +303,7 @@
                 }
             },
             "2-0": {
-                "name": "Forgotten Ruins",
+                "name": "遗忘废墟",
                 "code": "forgotten-ruins-01",
                 "booty": [
                     {
@@ -360,7 +360,7 @@
                 }
             },
             "2-1": {
-                "name": "Forgotten Ruins",
+                "name": "遗忘废墟",
                 "code": "forgotten-ruins-01",
                 "booty": [
                     {
@@ -409,7 +409,7 @@
                 }
             },
             "2-2": {
-                "name": "Forgotten Ruins",
+                "name": "遗忘废墟",
                 "code": "forgotten-ruins-01",
                 "booty": [
                     {
@@ -466,7 +466,7 @@
                 }
             },
             "3-0": {
-                "name": "Forgotten Ruins",
+                "name": "遗忘废墟",
                 "code": "forgotten-ruins-01",
                 "booty": [
                     {
@@ -547,7 +547,7 @@
                 }
             },
             "3-1": {
-                "name": "Forgotten Ruins",
+                "name": "遗忘废墟",
                 "code": "forgotten-ruins-01",
                 "booty": [
                     {
@@ -628,7 +628,7 @@
                 }
             },
             "3-2": {
-                "name": "Forgotten Ruins",
+                "name": "遗忘废墟",
                 "code": "forgotten-ruins-01",
                 "booty": [
                     {
@@ -717,7 +717,7 @@
                 }
             },
             "4-0": {
-                "name": "Forgotten Ruins",
+                "name": "遗忘废墟",
                 "code": "forgotten-ruins-01",
                 "booty": [
                     {
@@ -814,7 +814,7 @@
                 }
             },
             "4-1": {
-                "name": "Forgotten Ruins",
+                "name": "遗忘废墟",
                 "code": "forgotten-ruins-01",
                 "booty": [
                     {
@@ -903,7 +903,7 @@
                 }
             },
             "5-0": {
-                "name": "Forgotten Ruins",
+                "name": "遗忘废墟",
                 "code": "forgotten-ruins-01",
                 "booty": [
                     {
@@ -1005,7 +1005,7 @@
                 }
             },
             "5-1": {
-                "name": "Forgotten Ruins",
+                "name": "遗忘废墟",
                 "code": "forgotten-ruins-01",
                 "booty": [
                     {
@@ -1107,7 +1107,7 @@
                 }
             },
             "6-0": {
-                "name": "Forgotten Ruins",
+                "name": "遗忘废墟",
                 "code": "forgotten-ruins-01",
                 "booty": [
                     {
@@ -1201,7 +1201,7 @@
                 }
             },
             "6-1": {
-                "name": "Forgotten Ruins",
+                "name": "遗忘废墟",
                 "code": "forgotten-ruins-01",
                 "booty": [
                     {
@@ -1295,7 +1295,7 @@
                 }
             },
             "7-0": {
-                "name": "Forgotten Ruins",
+                "name": "遗忘废墟",
                 "code": "forgotten-ruins-01",
                 "booty": [
                     {
@@ -1389,7 +1389,7 @@
                 }
             },
             "7-1": {
-                "name": "Forgotten Ruins",
+                "name": "遗忘废墟",
                 "code": "forgotten-ruins-01",
                 "booty": [
                     {
@@ -1483,7 +1483,7 @@
                 }
             },
             "8-0": {
-                "name": "Forgotten Ruins",
+                "name": "遗忘废墟",
                 "code": "forgotten-ruins-01",
                 "booty": [
                     {
@@ -1586,7 +1586,7 @@
                 }
             },
             "8-1": {
-                "name": "Forgotten Ruins",
+                "name": "遗忘废墟",
                 "code": "forgotten-ruins-01",
                 "booty": [
                     {
@@ -1787,8 +1787,8 @@
     {
         "config": {
             "id": "scenario-cursed-swamp",
-            "name": "Cursed Swamp",
-            "description": "The swamp breathes with a rotten, mournful rhythm, swallowing the light and muting the cries of the lost. Every marshy step drags the party closer to the ancient malice festering beneath the water.",
+            "name": "诅咒沼泽",
+            "description": "沼泽以腐烂而悲凉的节奏呼吸，吞没光明，压低迷失者的哭喊。每一步泥泞都将队伍拖向水下滋生的古老恶意。",
             "capacity": 4,
             "timer": true,
             "requirements": {
@@ -1800,7 +1800,7 @@
         },
         "spots": {
             "1-0": {
-                "name": "Cursed Swamp",
+                "name": "诅咒沼泽",
                 "code": "cursed-swamp-01",
                 "booty": [
                     {
@@ -1877,7 +1877,7 @@
                 }
             },
             "1-1": {
-                "name": "Cursed Swamp",
+                "name": "诅咒沼泽",
                 "code": "cursed-swamp-01",
                 "booty": [
                     {
@@ -1954,7 +1954,7 @@
                 }
             },
             "1-2": {
-                "name": "Cursed Swamp",
+                "name": "诅咒沼泽",
                 "code": "cursed-swamp-01",
                 "booty": [
                     {
@@ -2031,7 +2031,7 @@
                 }
             },
             "2-0": {
-                "name": "Cursed Swamp",
+                "name": "诅咒沼泽",
                 "code": "cursed-swamp-01",
                 "booty": [
                     {
@@ -2104,7 +2104,7 @@
                 }
             },
             "2-1": {
-                "name": "Cursed Swamp",
+                "name": "诅咒沼泽",
                 "code": "cursed-swamp-01",
                 "booty": [
                     {
@@ -2177,7 +2177,7 @@
                 }
             },
             "2-2": {
-                "name": "Cursed Swamp",
+                "name": "诅咒沼泽",
                 "code": "cursed-swamp-01",
                 "booty": [
                     {
@@ -2258,7 +2258,7 @@
                 }
             },
             "3-0": {
-                "name": "Cursed Swamp",
+                "name": "诅咒沼泽",
                 "code": "cursed-swamp-01",
                 "booty": [
                     {
@@ -2339,7 +2339,7 @@
                 }
             },
             "3-1": {
-                "name": "Cursed Swamp",
+                "name": "诅咒沼泽",
                 "code": "cursed-swamp-01",
                 "booty": [
                     {
@@ -2420,7 +2420,7 @@
                 }
             },
             "3-2": {
-                "name": "Cursed Swamp",
+                "name": "诅咒沼泽",
                 "code": "cursed-swamp-01",
                 "booty": [
                     {
@@ -2501,7 +2501,7 @@
                 }
             },
             "4-0": {
-                "name": "Cursed Swamp",
+                "name": "诅咒沼泽",
                 "code": "cursed-swamp-01",
                 "booty": [
                     {
@@ -2606,7 +2606,7 @@
                 }
             },
             "4-1": {
-                "name": "Cursed Swamp",
+                "name": "诅咒沼泽",
                 "code": "cursed-swamp-01",
                 "booty": [
                     {
@@ -2711,7 +2711,7 @@
                 }
             },
             "5-0": {
-                "name": "Cursed Swamp",
+                "name": "诅咒沼泽",
                 "code": "cursed-swamp-01",
                 "booty": [
                     {
@@ -2821,7 +2821,7 @@
                 }
             },
             "5-1": {
-                "name": "Cursed Swamp",
+                "name": "诅咒沼泽",
                 "code": "cursed-swamp-01",
                 "booty": [
                     {
@@ -2931,7 +2931,7 @@
                 }
             },
             "6-0": {
-                "name": "Cursed Swamp",
+                "name": "诅咒沼泽",
                 "code": "cursed-swamp-01",
                 "booty": [
                     {
@@ -3025,7 +3025,7 @@
                 }
             },
             "6-1": {
-                "name": "Cursed Swamp",
+                "name": "诅咒沼泽",
                 "code": "cursed-swamp-01",
                 "booty": [
                     {
@@ -3119,7 +3119,7 @@
                 }
             },
             "7-0": {
-                "name": "Cursed Swamp",
+                "name": "诅咒沼泽",
                 "code": "cursed-swamp-01",
                 "booty": [
                     {
@@ -3213,7 +3213,7 @@
                 }
             },
             "7-1": {
-                "name": "Cursed Swamp",
+                "name": "诅咒沼泽",
                 "code": "cursed-swamp-01",
                 "booty": [
                     {
@@ -3307,7 +3307,7 @@
                 }
             },
             "8-0": {
-                "name": "Cursed Swamp",
+                "name": "诅咒沼泽",
                 "code": "cursed-swamp-01",
                 "booty": [
                     {
@@ -3410,7 +3410,7 @@
                 }
             },
             "8-1": {
-                "name": "Cursed Swamp",
+                "name": "诅咒沼泽",
                 "code": "cursed-swamp-01",
                 "booty": [
                     {
@@ -3611,8 +3611,8 @@
     {
         "config": {
             "id": "scenario-demonic-forest",
-            "name": "Demonic Forest",
-            "description": "A haunted woodland of twisted black pines, blood-red thorns, and whispering ruins swallowed by eternal night. Every path reeks of old sorcery, and the trees seem to lean closer as if hungry for the living.",
+            "name": "恶魔森林",
+            "description": "扭曲黑松、血红荆棘与低语废墟组成闹鬼林地，被永夜吞没。每条道路都弥漫古老巫术的气息，树木仿佛因渴求生者而逐渐靠近。",
             "capacity": 4,
             "timer": true,
             "requirements": {
@@ -3624,7 +3624,7 @@
         },
         "spots": {
             "1-0": {
-                "name": "Demonic Forest",
+                "name": "恶魔森林",
                 "code": "demonic-forest-01",
                 "booty": [
                     {
@@ -3701,7 +3701,7 @@
                 }
             },
             "1-1": {
-                "name": "Demonic Forest",
+                "name": "恶魔森林",
                 "code": "demonic-forest-01",
                 "booty": [
                     {
@@ -3774,7 +3774,7 @@
                 }
             },
             "1-2": {
-                "name": "Demonic Forest",
+                "name": "恶魔森林",
                 "code": "demonic-forest-01",
                 "booty": [
                     {
@@ -3855,7 +3855,7 @@
                 }
             },
             "2-0": {
-                "name": "Demonic Forest",
+                "name": "恶魔森林",
                 "code": "demonic-forest-01",
                 "booty": [
                     {
@@ -3936,7 +3936,7 @@
                 }
             },
             "2-1": {
-                "name": "Demonic Forest",
+                "name": "恶魔森林",
                 "code": "demonic-forest-01",
                 "booty": [
                     {
@@ -4017,7 +4017,7 @@
                 }
             },
             "2-2": {
-                "name": "Demonic Forest",
+                "name": "恶魔森林",
                 "code": "demonic-forest-01",
                 "booty": [
                     {
@@ -4098,7 +4098,7 @@
                 }
             },
             "3-0": {
-                "name": "Demonic Forest",
+                "name": "恶魔森林",
                 "code": "demonic-forest-01",
                 "booty": [
                     {
@@ -4179,7 +4179,7 @@
                 }
             },
             "3-1": {
-                "name": "Demonic Forest",
+                "name": "恶魔森林",
                 "code": "demonic-forest-01",
                 "booty": [
                     {
@@ -4260,7 +4260,7 @@
                 }
             },
             "3-2": {
-                "name": "Demonic Forest",
+                "name": "恶魔森林",
                 "code": "demonic-forest-01",
                 "booty": [
                     {
@@ -4341,7 +4341,7 @@
                 }
             },
             "4-0": {
-                "name": "Demonic Forest",
+                "name": "恶魔森林",
                 "code": "demonic-forest-01",
                 "booty": [
                     {
@@ -4446,7 +4446,7 @@
                 }
             },
             "4-1": {
-                "name": "Demonic Forest",
+                "name": "恶魔森林",
                 "code": "demonic-forest-01",
                 "booty": [
                     {
@@ -4551,7 +4551,7 @@
                 }
             },
             "5-0": {
-                "name": "Demonic Forest",
+                "name": "恶魔森林",
                 "code": "demonic-forest-01",
                 "booty": [
                     {
@@ -4661,7 +4661,7 @@
                 }
             },
             "5-1": {
-                "name": "Demonic Forest",
+                "name": "恶魔森林",
                 "code": "demonic-forest-01",
                 "booty": [
                     {
@@ -4771,7 +4771,7 @@
                 }
             },
             "6-0": {
-                "name": "Demonic Forest",
+                "name": "恶魔森林",
                 "code": "demonic-forest-01",
                 "booty": [
                     {
@@ -4865,7 +4865,7 @@
                 }
             },
             "6-1": {
-                "name": "Demonic Forest",
+                "name": "恶魔森林",
                 "code": "demonic-forest-01",
                 "booty": [
                     {
@@ -4959,7 +4959,7 @@
                 }
             },
             "7-0": {
-                "name": "Demonic Forest",
+                "name": "恶魔森林",
                 "code": "demonic-forest-01",
                 "booty": [
                     {
@@ -5062,7 +5062,7 @@
                 }
             },
             "7-1": {
-                "name": "Demonic Forest",
+                "name": "恶魔森林",
                 "code": "demonic-forest-01",
                 "booty": [
                     {
@@ -5253,8 +5253,8 @@
     {
         "config": {
             "id": "scenario-orcs-camp",
-            "name": "Orcs Camp",
-            "description": "A brutal war camp carved into the black earth, where iron braziers burn beneath a sky choked with ash and fog. Savage orcs brood around crude huts, sharpening blades and muttering ominous prayers to the dark gods of the wild.",
+            "name": "兽人营地",
+            "description": "凶残的战营凿入黑土，铁火盆在烟灰与浓雾遮蔽的天空下燃烧。野蛮兽人聚在粗糙棚屋周围磨刀，向黑暗神明低声祈祷不祥之事。",
             "capacity": 4,
             "timer": true,
             "requirements": {
@@ -5266,7 +5266,7 @@
         },
         "spots": {
             "1-0": {
-                "name": "Orcs Camp",
+                "name": "兽人营地",
                 "code": "orcs-camp-01",
                 "booty": [
                     {
@@ -5343,7 +5343,7 @@
                 }
             },
             "1-1": {
-                "name": "Orcs Camp",
+                "name": "兽人营地",
                 "code": "orcs-camp-01",
                 "booty": [
                     {
@@ -5408,7 +5408,7 @@
                 }
             },
             "1-2": {
-                "name": "Orcs Camp",
+                "name": "兽人营地",
                 "code": "orcs-camp-01",
                 "booty": [
                     {
@@ -5473,7 +5473,7 @@
                 }
             },
             "2-0": {
-                "name": "Orcs Camp",
+                "name": "兽人营地",
                 "code": "orcs-camp-01",
                 "booty": [
                     {
@@ -5546,7 +5546,7 @@
                 }
             },
             "2-1": {
-                "name": "Orcs Camp",
+                "name": "兽人营地",
                 "code": "orcs-camp-01",
                 "booty": [
                     {
@@ -5619,7 +5619,7 @@
                 }
             },
             "2-2": {
-                "name": "Orcs Camp",
+                "name": "兽人营地",
                 "code": "orcs-camp-01",
                 "booty": [
                     {
@@ -5700,7 +5700,7 @@
                 }
             },
             "3-0": {
-                "name": "Orcs Camp",
+                "name": "兽人营地",
                 "code": "orcs-camp-01",
                 "booty": [
                     {
@@ -5781,7 +5781,7 @@
                 }
             },
             "3-1": {
-                "name": "Orcs Camp",
+                "name": "兽人营地",
                 "code": "orcs-camp-01",
                 "booty": [
                     {
@@ -5862,7 +5862,7 @@
                 }
             },
             "3-2": {
-                "name": "Orcs Camp",
+                "name": "兽人营地",
                 "code": "orcs-camp-01",
                 "booty": [
                     {
@@ -5943,7 +5943,7 @@
                 }
             },
             "4-0": {
-                "name": "Orcs Camp",
+                "name": "兽人营地",
                 "code": "orcs-camp-01",
                 "booty": [
                     {
@@ -6053,7 +6053,7 @@
                 }
             },
             "4-1": {
-                "name": "Orcs Camp",
+                "name": "兽人营地",
                 "code": "orcs-camp-01",
                 "booty": [
                     {
@@ -6163,7 +6163,7 @@
                 }
             },
             "5-0": {
-                "name": "Orcs Camp",
+                "name": "兽人营地",
                 "code": "orcs-camp-01",
                 "booty": [
                     {
@@ -6273,7 +6273,7 @@
                 }
             },
             "5-1": {
-                "name": "Orcs Camp",
+                "name": "兽人营地",
                 "code": "orcs-camp-01",
                 "booty": [
                     {
@@ -6383,7 +6383,7 @@
                 }
             },
             "6-0": {
-                "name": "Orcs Camp",
+                "name": "兽人营地",
                 "code": "orcs-camp-01",
                 "booty": [
                     {
@@ -6486,7 +6486,7 @@
                 }
             },
             "6-1": {
-                "name": "Orcs Camp",
+                "name": "兽人营地",
                 "code": "orcs-camp-01",
                 "booty": [
                     {
@@ -6667,8 +6667,8 @@
     {
         "config": {
             "id": "scenario-dragons-lair",
-            "name": "Dragon's Lair",
-            "description": "Beneath a broken moon, the lair stirs with ancient hunger. Ashen winds carry the scent of blood, and every step deeper into the cavern promises a reckoning with something older than fire.",
+            "name": "巨龙巢穴",
+            "description": "破碎月亮之下，巢穴涌动着远古饥饿。灰烬之风带来血腥味，每向洞穴深处迈进一步，都更接近某种比火焰还古老的存在。",
             "capacity": 4,
             "timer": true,
             "requirements": {
@@ -6680,7 +6680,7 @@
         },
         "spots": {
             "1-0": {
-                "name": "Dragon's Lair",
+                "name": "巨龙巢穴",
                 "code": "dragons-lair-01",
                 "booty": [
                     {
@@ -6773,7 +6773,7 @@
                 }
             },
             "1-1": {
-                "name": "Dragon's Lair",
+                "name": "巨龙巢穴",
                 "code": "dragons-lair-01",
                 "booty": [
                     {
@@ -6866,7 +6866,7 @@
                 }
             },
             "1-2": {
-                "name": "Dragon's Lair",
+                "name": "巨龙巢穴",
                 "code": "dragons-lair-01",
                 "booty": [
                     {
@@ -6959,7 +6959,7 @@
                 }
             },
             "2-0": {
-                "name": "Dragon's Lair",
+                "name": "巨龙巢穴",
                 "code": "dragons-lair-01",
                 "booty": [
                     {
@@ -7048,7 +7048,7 @@
                 }
             },
             "2-1": {
-                "name": "Dragon's Lair",
+                "name": "巨龙巢穴",
                 "code": "dragons-lair-01",
                 "booty": [
                     {
@@ -7137,7 +7137,7 @@
                 }
             },
             "2-2": {
-                "name": "Dragon's Lair",
+                "name": "巨龙巢穴",
                 "code": "dragons-lair-01",
                 "booty": [
                     {
@@ -7226,7 +7226,7 @@
                 }
             },
             "3-0": {
-                "name": "Dragon's Lair",
+                "name": "巨龙巢穴",
                 "code": "dragons-lair-01",
                 "booty": [
                     {
@@ -7315,7 +7315,7 @@
                 }
             },
             "3-1": {
-                "name": "Dragon's Lair",
+                "name": "巨龙巢穴",
                 "code": "dragons-lair-01",
                 "booty": [
                     {
@@ -7404,7 +7404,7 @@
                 }
             },
             "3-2": {
-                "name": "Dragon's Lair",
+                "name": "巨龙巢穴",
                 "code": "dragons-lair-01",
                 "booty": [
                     {
@@ -7493,7 +7493,7 @@
                 }
             },
             "4-0": {
-                "name": "Dragon's Lair",
+                "name": "巨龙巢穴",
                 "code": "dragons-lair-01",
                 "booty": [
                     {
@@ -7587,7 +7587,7 @@
                 }
             },
             "4-1": {
-                "name": "Dragon's Lair",
+                "name": "巨龙巢穴",
                 "code": "dragons-lair-01",
                 "booty": [
                     {
@@ -7681,7 +7681,7 @@
                 }
             },
             "4-2": {
-                "name": "Dragon's Lair",
+                "name": "巨龙巢穴",
                 "code": "dragons-lair-01",
                 "booty": [
                     {
@@ -7775,7 +7775,7 @@
                 }
             },
             "4-3": {
-                "name": "Dragon's Lair",
+                "name": "巨龙巢穴",
                 "code": "dragons-lair-01",
                 "booty": [
                     {
@@ -7869,7 +7869,7 @@
                 }
             },
             "5-0": {
-                "name": "Dragon's Lair",
+                "name": "巨龙巢穴",
                 "code": "dragons-lair-01",
                 "booty": [
                     {
@@ -7979,7 +7979,7 @@
                 }
             },
             "5-1": {
-                "name": "Dragon's Lair",
+                "name": "巨龙巢穴",
                 "code": "dragons-lair-01",
                 "booty": [
                     {
@@ -8089,7 +8089,7 @@
                 }
             },
             "6-0": {
-                "name": "Dragon's Lair",
+                "name": "巨龙巢穴",
                 "code": "dragons-lair-01",
                 "booty": [
                     {
@@ -8199,7 +8199,7 @@
                 }
             },
             "6-1": {
-                "name": "Dragon's Lair",
+                "name": "巨龙巢穴",
                 "code": "dragons-lair-01",
                 "booty": [
                     {
@@ -8309,7 +8309,7 @@
                 }
             },
             "7-0": {
-                "name": "Dragon's Lair",
+                "name": "巨龙巢穴",
                 "code": "dragons-lair-01",
                 "booty": [
                     {
@@ -8403,7 +8403,7 @@
                 }
             },
             "7-1": {
-                "name": "Dragon's Lair",
+                "name": "巨龙巢穴",
                 "code": "dragons-lair-01",
                 "booty": [
                     {
@@ -8497,7 +8497,7 @@
                 }
             },
             "8-0": {
-                "name": "Dragon's Lair",
+                "name": "巨龙巢穴",
                 "code": "dragons-lair-01",
                 "booty": [
                     {
@@ -8583,7 +8583,7 @@
                 }
             },
             "8-1": {
-                "name": "Dragon's Lair",
+                "name": "巨龙巢穴",
                 "code": "dragons-lair-01",
                 "booty": [
                     {
@@ -8677,7 +8677,7 @@
                 }
             },
             "9-0": {
-                "name": "Dragon's Lair",
+                "name": "巨龙巢穴",
                 "code": "dragons-lair-01",
                 "booty": [
                     {
@@ -8775,7 +8775,7 @@
                 }
             },
             "9-1": {
-                "name": "Dragon's Lair",
+                "name": "巨龙巢穴",
                 "code": "dragons-lair-01",
                 "booty": [
                     {

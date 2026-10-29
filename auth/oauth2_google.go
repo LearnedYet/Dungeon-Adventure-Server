@@ -35,28 +35,28 @@ func (a *Authenticator) HandleGoogleAuth2Callback(w http.ResponseWriter, r *http
 	item := a.stateCache.Get(state)
 	a.stateCache.Delete(state)
 	if item == nil || item.IsExpired() {
-		log.Info("Google Oauth: state is expired or doesn't exist")
+		log.Info("Google OAuth：认证状态已过期或不存在")
 		http.Redirect(w, r, a.config.RedirectUrl, http.StatusTemporaryRedirect)
 		return
 	}
 
 	ip := item.Value()
 	if !ip.Equal(util.GetIP(r)) {
-		log.Info("Google Oauth: IP address mismatch")
+		log.Info("Google OAuth：IP 地址不匹配")
 		http.Redirect(w, r, a.config.RedirectUrl, http.StatusTemporaryRedirect)
 		return
 	}
 
 	token, err := a.googleAuth2AcquireToken(r)
 	if err != nil {
-		log.Info("Google Oauth: couldn't acquire token: ", err.Error())
+		log.Info("Google Oauth: couldn't acquire token: 无法获取令牌，详细信息：", err.Error())
 		http.Redirect(w, r, a.config.RedirectUrl, http.StatusTemporaryRedirect)
 		return
 	}
 
 	userInfo, err := a.googleAuth2AcquireUserInfo(r, token)
 	if err != nil {
-		log.Info("Google Oauth: couldn't acquire user info: ", err.Error())
+		log.Info("Google Oauth: couldn't acquire user info: 无法获取用户信息，详细信息：", err.Error())
 		http.Redirect(w, r, a.config.RedirectUrl, http.StatusTemporaryRedirect)
 		return
 	}
@@ -64,7 +64,7 @@ func (a *Authenticator) HandleGoogleAuth2Callback(w http.ResponseWriter, r *http
 	credentials := UserCredentials{Email: userInfo.Email, Picture: userInfo.Picture}
 	status := a.handler.HandleUserAuthenticated(credentials)
 	if !status.IsAuthenticated {
-		log.Info("Google Oauth: authentication rejected for: ", credentials.Email)
+		log.Info("Google Oauth: authentication rejected for: 用户认证被拒绝：", credentials.Email)
 		http.Redirect(w, r, a.config.RedirectUrl, http.StatusTemporaryRedirect)
 		return
 	}

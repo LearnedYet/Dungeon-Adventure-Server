@@ -1,6 +1,6 @@
 [
     {
-        "name": "Barbarian",
+        "name": "野蛮人",
         "code": "barbarian",
         "class": "barbarian",
         "booty": {
@@ -8,7 +8,7 @@
         },
         "achievements": {},
         "quests": {},
-        "description": "A hulking brute from frozen wastes, axe in hand and fury in his blood.",
+        "description": "来自冰冻荒原的魁梧猛士，手握战斧，血液中奔涌着怒火。",
         "stats": {
             "progress": {
                 "level": 1
@@ -81,7 +81,7 @@
         }
     },
     {
-        "name": "Warrior",
+        "name": "战士",
         "code": "warrior",
         "class": "warrior",
         "booty": {
@@ -89,7 +89,7 @@
         },
         "achievements": {},
         "quests": {},
-        "description": "A disciplined sword-and-shield fighter, hardened by sieges and broken banners.",
+        "description": "训练有素的剑盾战士，围城战与破碎旌旗磨砺了他的意志。",
         "stats": {
             "progress": {
                 "level": 1
@@ -162,7 +162,7 @@
         }
     },
     {
-        "name": "Ranger",
+        "name": "游侠",
         "code": "ranger",
         "class": "ranger",
         "booty": {
@@ -170,7 +170,7 @@
         },
         "achievements": {},
         "quests": {},
-        "description": "A swift wild archer, slipping like smoke between ruined trees.",
+        "description": "敏捷的荒野弓手，如烟雾般穿梭于残破林木之间。",
         "stats": {
             "progress": {
                 "level": 1
@@ -251,7 +251,7 @@
         }
     },
     {
-        "name": "Mage",
+        "name": "法师",
         "code": "mage",
         "class": "mage",
         "booty": {
@@ -259,7 +259,7 @@
         },
         "achievements": {},
         "quests": {},
-        "description": "A sorcerer of ash-black tomes, calling cold stars down upon mortal flesh.",
+        "description": "钻研灰黑典籍的施法者，召来冰冷星光摧毁凡人的血肉。",
         "stats": {
             "progress": {
                 "level": 1
@@ -345,9 +345,9 @@
         }
     },
     {
-        "name": "North Troll",
+        "name": "北地巨魔",
         "code": "troll-01",
-        "description": "A massive, dim-witted giant from the icy north, crushing foes with brute strength.",
+        "description": "来自冰冷北方的庞大愚钝巨怪，以蛮力粉碎敌人。",
         "stats": {
             "progress": {
                 "level": 5,
@@ -433,9 +433,9 @@
         ]
     },
     {
-        "name": "Nasty Goblin",
+        "name": "恶毒哥布林",
         "code": "goblin-01",
-        "description": "A cunning, green-skinned pest, armed with rusty weapons and wicked schemes.",
+        "description": "狡诈的绿皮害兽，拿着锈蚀武器，满脑子恶毒计谋。",
         "stats": {
             "progress": {
                 "level": 4,
@@ -533,9 +533,9 @@
         ]
     },
     {
-        "name": "Bat",
+        "name": "蝙蝠",
         "code": "bat-01",
-        "description": "A screeching fiend of the night, swooping down with razor-sharp fangs.",
+        "description": "夜间尖啸的恶物，俯冲时露出剃刀般锋利的獠牙。",
         "stats": {
             "progress": {
                 "level": 1,
@@ -614,9 +614,9 @@
         ]
     },
     {
-        "name": "Green Slime",
+        "name": "绿色史莱姆",
         "code": "slime-01",
-        "description": "A gelatinous horror that dissolves flesh on contact.",
+        "description": "胶质怪物，接触之处会溶解血肉。",
         "stats": {
             "progress": {
                 "level": 1,
@@ -708,9 +708,9 @@
         ]
     },
     {
-        "name": "Slow Green Slime",
+        "name": "迟缓绿色史莱姆",
         "code": "slime-02",
-        "description": "A sluggish, acidic blob that slowly engulfs its prey.",
+        "description": "迟缓的酸性黏团，缓慢吞没猎物。",
         "stats": {
             "progress": {
                 "level": 2,
@@ -802,9 +802,9 @@
         ]
     },
     {
-        "name": "Nature Demon",
+        "name": "自然恶魔",
         "code": "elemental-01",
-        "description": "A venomous demon from the abyss, spewing acid and fear.",
+        "description": "来自深渊的剧毒恶魔，喷吐酸液与恐惧。",
         "stats": {
             "progress": {
                 "level": 4,
@@ -896,9 +896,9 @@
         ]
     },
     {
-        "name": "Ice Demon",
+        "name": "冰霜恶魔",
         "code": "elemental-02",
-        "description": "A frigid demon of ice, freezing souls with its chilling touch.",
+        "description": "寒冰所化的恶魔，以冰冷触碰冻结灵魂。",
         "stats": {
             "progress": {
                 "level": 4,
@@ -990,9 +990,9 @@
         ]
     },
     {
-        "name": "Fire Demon",
+        "name": "火焰恶魔",
         "code": "elemental-03",
-        "description": "A blazing demon of fire, incinerating all in its path.",
+        "description": "熊熊燃烧的恶魔，将沿途一切焚为灰烬。",
         "stats": {
             "progress": {
                 "level": 4,
@@ -1085,9 +1085,9 @@
         ]
     },
     {
-        "name": "Fire Skull",
+        "name": "烈焰骷髅",
         "code": "skull-01",
-        "description": "A flaming skull animated by dark magic, burning with unholy fire.",
+        "description": "黑魔法唤醒的燃烧头骨，燃着不洁之火。",
         "stats": {
             "progress": {
                 "level": 4,
@@ -1166,9 +1166,9 @@
         ]
     },
     {
-        "name": "Giant Rat",
+        "name": "巨鼠",
         "code": "rat-01",
-        "description": "A filthy, disease-ridden vermin that swarms in the shadows.",
+        "description": "污秽且带病的害兽，成群潜伏在阴影中。",
         "stats": {
             "progress": {
                 "level": 2,
@@ -1264,9 +1264,9 @@
         ]
     },
     {
-        "name": "Cursing Ghost",
+        "name": "诅咒幽灵",
         "code": "ghost-01",
-        "description": "A spectral apparition, haunting the living with ethereal terror.",
+        "description": "以无形恐惧纠缠生者的幽灵幻影。",
         "stats": {
             "progress": {
                 "level": 2,
@@ -1345,9 +1345,9 @@
         ]
     },
     {
-        "name": "Death",
+        "name": "死神",
         "code": "death-01",
-        "description": "The Grim Reaper himself, wielding scythe and doom.",
+        "description": "死神亲临，手持镰刀，带来毁灭。",
         "stats": {
             "progress": {
                 "level": 5,
@@ -1433,9 +1433,9 @@
         ]
     },
     {
-        "name": "Hydra",
+        "name": "九头蛇",
         "code": "hydra-01",
-        "description": "A nightmarish Hydra of writhing heads and venom-black scales, born from the rot of the Cursed Swamp.",
+        "description": "诞生于诅咒沼泽腐败中的噩梦巨兽，众多头颅不断扭动，鳞片如毒液般漆黑。",
         "stats": {
             "progress": {
                 "level": 7,
@@ -1529,9 +1529,9 @@
         ]
     },
     {
-        "name": "Zombie",
+        "name": "僵尸",
         "code": "zombie-01",
-        "description": "A rotting corpse reanimated by necromancy, driven by insatiable hunger.",
+        "description": "被死灵术复活的腐尸，受无尽饥饿驱使。",
         "stats": {
             "progress": {
                 "level": 3,
@@ -1614,9 +1614,9 @@
         ]
     },
     {
-        "name": "Skeleton",
+        "name": "骷髅",
         "code": "skeleton-01",
-        "description": "A bony warrior risen from the grave, clattering with eternal malice.",
+        "description": "从坟墓中爬起的骸骨战士，骨骼碰响，恶意永存。",
         "stats": {
             "progress": {
                 "level": 4,
@@ -1702,9 +1702,9 @@
         ]
     },
     {
-        "name": "Dragon",
+        "name": "巨龙",
         "code": "dragon-01",
-        "description": "A colossal wyrm of legend, breathing fire and commanding the skies.",
+        "description": "传说中的庞大古龙，吐息烈焰，统御天空。",
         "stats": {
             "progress": {
                 "level": 10,
@@ -1798,9 +1798,9 @@
         ]
     },
     {
-        "name": "Giant Flea",
+        "name": "巨蚤",
         "code": "flea-01",
-        "description": "A buzzing bloodsucker, tiny but deadly in swarms.",
+        "description": "嗡嗡作响的吸血怪物，单只虽小，成群时却致命。",
         "stats": {
             "progress": {
                 "level": 1,
@@ -1880,9 +1880,9 @@
         ]
     },
     {
-        "name": "Toad",
+        "name": "蟾蜍",
         "code": "toad-01",
-        "description": "A bloated amphibian with a tongue like a whip, lurking in murky waters.",
+        "description": "臃肿的两栖怪物潜伏于浑水中，长舌如鞭。",
         "stats": {
             "progress": {
                 "level": 2,
@@ -1964,9 +1964,9 @@
         ]
     },
     {
-        "name": "Snake",
+        "name": "毒蛇",
         "code": "snake-01",
-        "description": "A slithering serpent, striking with venomous fangs.",
+        "description": "蜿蜒潜行的蛇，以毒牙迅速出击。",
         "stats": {
             "progress": {
                 "level": 2,
@@ -2046,9 +2046,9 @@
         ]
     },
     {
-        "name": "Orc Raider",
+        "name": "兽人劫掠者",
         "code": "orc-01",
-        "description": "A brutal raider of the black marshes, dragging terror through the night with iron and malice.",
+        "description": "来自黑沼泽的凶狠劫掠者，以钢铁与恶意将恐惧拖入夜色。",
         "stats": {
             "progress": {
                 "level": 5,
@@ -2142,9 +2142,9 @@
         ]
     },
     {
-        "name": "Orc Berserker",
+        "name": "兽人狂战士",
         "code": "orc-02",
-        "description": "A bloodthirsty warrior who tears through battle like a storm unleashed from the grave.",
+        "description": "嗜血战士冲入战场，仿佛从坟墓释放的狂暴风暴。",
         "stats": {
             "progress": {
                 "level": 6,
@@ -2238,9 +2238,9 @@
         ]
     },
     {
-        "name": "Orc Necromancer",
+        "name": "兽人死灵法师",
         "code": "orc-necromancer-01",
-        "description": "A whispering tyrant of the fallen, binding the dead to his will with ancient, forbidden rites.",
+        "description": "低语的亡者暴君，以古老禁忌仪式将死者束缚于自己的意志。",
         "stats": {
             "progress": {
                 "level": 5,
@@ -2339,9 +2339,9 @@
         ]
     },
     {
-        "name": "Orc Commander",
+        "name": "兽人统帅",
         "code": "orc-commander-01",
-        "description": "A ruthless warlord who turns shattered siege lines into a tide of fear and iron.",
+        "description": "无情的军阀，将破碎的攻城战线化作钢铁与恐惧的洪流。",
         "stats": {
             "progress": {
                 "level": 7,
@@ -2443,9 +2443,9 @@
         ]
     },
     {
-        "name": "Griffin",
+        "name": "狮鹫",
         "code": "griffin-01",
-        "description": "A sky-born predator with a hunter's gaze and a feathered shadow that falls across the doomed.",
+        "description": "来自天空的猎食者，目光锐利，羽翼阴影笼罩着注定灭亡者。",
         "stats": {
             "progress": {
                 "level": 5,
@@ -2526,9 +2526,9 @@
         ]
     },
     {
-        "name": "Manticore",
+        "name": "蝎尾狮",
         "code": "manticore-01",
-        "description": "A monstrous beast of iron claws and cruel appetite, stalking the wilderness with a smile of hunger.",
+        "description": "拥有铁爪与残酷食欲的怪兽，带着饥饿的狞笑在荒野猎食。",
         "stats": {
             "progress": {
                 "level": 6,
@@ -2612,9 +2612,9 @@
         ]
     },
     {
-        "name": "Demonic Boar",
+        "name": "恶魔野猪",
         "code": "boar-demon-01",
-        "description": "A nightmare of tusks and flame, charging through the dark with the fury of a thousand damned.",
+        "description": "獠牙与烈焰构成的噩梦，裹挟千名受诅者的怒火冲破黑暗。",
         "stats": {
             "progress": {
                 "level": 5,
@@ -2695,9 +2695,9 @@
         ]
     },
     {
-        "name": "Demonic Wolf",
+        "name": "恶魔狼",
         "code": "wolf-demon-01",
-        "description": "A ravenous predator of the moonless wilds, its eyes burning with hunger and old corruption.",
+        "description": "无月荒野中贪食的掠食者，眼中燃着饥饿与古老腐化。",
         "stats": {
             "progress": {
                 "level": 6,
@@ -2778,9 +2778,9 @@
         ]
     },
     {
-        "name": "Wendigo",
+        "name": "温迪戈",
         "code": "wendigo-01",
-        "description": "A gaunt omen of madness hunger, stalking its prey with the empty appetite of a soul long dead.",
+        "description": "瘦骨嶙峋的疯狂饥饿之兆，以早已死去灵魂的空虚食欲追猎活物。",
         "stats": {
             "progress": {
                 "level": 7,
@@ -2871,9 +2871,9 @@
         ]
     },
     {
-        "name": "Forest Witch",
+        "name": "森林女巫",
         "code": "forest-witch-01",
-        "description": "A reclusive sorceress of the blackwood, weaving curses between the roots of the ancient dead.",
+        "description": "隐居黑森林的女巫，在古老亡者的树根之间编织诅咒。",
         "stats": {
             "progress": {
                 "level": 8,
@@ -2979,9 +2979,9 @@
         ]
     },
     {
-        "name": "Dummy",
+        "name": "训练假人",
         "code": "dummy-01",
-        "description": "A training dummy.",
+        "description": "用于训练的假人。",
         "stats": {
             "progress": {
                 "level": 0,

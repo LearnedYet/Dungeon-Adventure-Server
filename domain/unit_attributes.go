@@ -5,13 +5,13 @@ import (
 )
 
 type UnitAttributes struct {
-	Strength     float32 `json:"strength" bson:"strength"`         // enhances (stabbing, cutting, crushing, bleeding) damage
-	Physique     float32 `json:"physique" bson:"physique"`         // affects stun chance
-	Agility      float32 `json:"agility" bson:"agility"`           // affects attack chance, dodge chance
-	Endurance    float32 `json:"endurance" bson:"endurance"`       // stamina recovery
-	Intelligence float32 `json:"intelligence" bson:"intelligence"` // enhances (fire, cold, lightning, acid, exhaustion, manaDrain, fear, curse) damage
-	Initiative   float32 `json:"initiative" bson:"initiative"`     // affects turn order
-	Luck         float32 `json:"luck" bson:"luck"`                 // affects critical chance
+	Strength     float32 `json:"strength" bson:"strength"`         // 增强穿刺、斩击、钝击和流血伤害
+	Physique     float32 `json:"physique" bson:"physique"`         // 影响眩晕概率
+	Agility      float32 `json:"agility" bson:"agility"`           // 影响攻击命中率与闪避概率
+	Endurance    float32 `json:"endurance" bson:"endurance"`       // 体力恢复
+	Intelligence float32 `json:"intelligence" bson:"intelligence"` // 增强火焰、寒冷、闪电、酸蚀、体力消耗、法力汲取、恐惧和诅咒伤害
+	Initiative   float32 `json:"initiative" bson:"initiative"`     // 影响行动顺序
+	Luck         float32 `json:"luck" bson:"luck"`                 // 影响暴击概率
 }
 
 func (a *UnitAttributes) Accumulate(attributes UnitAttributes) {

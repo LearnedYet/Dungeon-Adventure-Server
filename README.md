@@ -1,100 +1,111 @@
-# dungeon-adventure-server
-Golang project of a turn-based multiplayer RPG game server.  
+# 地牢探险：Go 服务端
 
-Hosted at: [LearnedYet.github.io/dungeon-adventure-server-html-client](https://learnedyet.github.io/Dungeon-Adventure-Client/)  
+使用 Go（Golang）实现的多人回合制角色扮演游戏服务端。
 
-## BaseAttributes:
-* `health`        - the **hit points** a unit can take before dying
-* `stamina`       - a weapon may require **stamina points** to perform an action
-* `mana`          - a weapon or spell may require **mana points** to perform an action
-* `action points` - a weapon, spell, or disposable item may require **action points** to perform an action
 
-## Attributes:
-* `strength`     - enhances **stabbing**, **cutting**, **crushing**, and **bleeding** damage
-* `physique`     - affects **stun chance**. For every 10 points, adds 1 point to all **physical resistances**
-* `agility`      - affects **attack/dodge chance**
-* `endurance`    - affects **stamina** recovery
-* `intelligence` - enhances **fire**, **cold**, **lightning**, **acid**, **exhaustion**, **manaDrain**, **fear**, **curse**, and **madness** damage.
-* `initiative`   - affects **turn order**. For every 10 points, adds **1 action point**
-* `luck`         - affects **critical chance**
+## 基础属性（BaseAttributes）
 
-## State:
-* `health`        - current **hit points** a unit has
-* `stamina`       - current **stamina points** a unit has
-* `mana`          - current **mana points** a unit has
-* `action points` - current **action points** a unit has for the current turn
-* `stress`        - accumulative, reduces the **chance to perform an action**, increases the **chance to retreat**, and the **critical miss chance**
+* `health`：生命值，单位死亡前能够承受的生命损失总量。
+* `stamina`：体力，使用武器执行行动可能消耗体力。
+* `mana`：法力，使用武器或法术执行行动可能消耗法力。
+* `action points`：行动点，使用武器、法术或消耗品执行行动可能消耗行动点。
 
-## Damage, Resistance:
-* `stabbing`   - affects the **health** attribute
-* `cutting`    - affects the **health** attribute
-* `crushing`   - affects the **health** attribute
-* `fire`       - affects the **health** attribute
-* `cold`       - affects the **health** attribute
-* `lightning`  - affects the **health** attribute
-* `acid`       - affects the **health** attribute
-* `poison`     - affects the **health** attribute
-* `bleeding`   - affects the **health** attribute
-* `exhaustion` - affects the **stamina** attribute
-* `manaDrain`  - affects the **mana** attribute
-* `fear`       - affects the **stress** attribute
-* `curse`      - affects the **stress** attribute
-* `madness`    - affects the **stress** attribute
+## 属性（Attributes）
 
-## Recovery:
-* **State**        - recovers state parameters
-* **Damage**       - reduces accumulated damage impact 
+* `strength`：力量，增强穿刺、斩击、钝击和流血伤害。
+* `physique`：体质，影响眩晕概率。每 10 点体质增加所有物理抗性 1 点。
+* `agility`：敏捷，影响攻击命中率与闪避概率。
+* `endurance`：耐力，影响体力恢复。
+* `intelligence`：智力，增强火焰、寒冷、闪电、酸蚀、疲劳、法力汲取、恐惧、诅咒和疯狂伤害。
+* `initiative`：先攻，影响行动顺序。每 10 点先攻增加 1 点行动点。
+* `luck`：幸运，影响暴击概率。
 
-## Modification:
-* **BaseAttributes** - modifies unit base attributes
-* **Attributes**     - modifies unit attributes
-* **Resistance**     - modifies unit resistance
-* **Damage**         - modifies the damage a unit can apply
-* **Recovery**       - recovers unit state
+## 当前状态（State）
 
-## Impact:
-* `duration`   - **duration** of effect, immediate if zero
-* `chance`     - base **chance**
+* `health`：单位当前的生命值。
+* `stamina`：单位当前的体力。
+* `mana`：单位当前的法力。
+* `action points`：单位在当前回合剩余的行动点。
+* `stress`：压力，会累积；降低行动成功率，提高撤退概率和严重失误概率。
 
-## DamageImpact:
-* **Impact**
-* **Damage**
+## 伤害与抗性（Damage、Resistance）
 
-## ModificationImpact:
-* Impact
-* Modification
+* `stabbing`：穿刺，影响生命值。
+* `cutting`：斩击，影响生命值。
+* `crushing`：钝击，影响生命值。
+* `fire`：火焰，影响生命值。
+* `cold`：寒冷，影响生命值。
+* `lightning`：闪电，影响生命值。
+* `acid`：酸蚀，影响生命值。
+* `poison`：毒素，影响生命值。
+* `bleeding`：流血，影响生命值。
+* `exhaustion`：疲劳伤害，消耗体力。
+* `manaDrain`：法力汲取，影响法力。
+* `fear`：恐惧，影响压力。
+* `curse`：诅咒，影响压力。
+* `madness`：疯狂，影响压力。
 
-## Items:
-* `Weapon`     - an `equipment` item representing any **weapon** a unit can equip and use against the enemy. **Weapons** may require special `ammunition`. Deals `DamageImpact`. Can only be used in the `Combat Phase`.
-* `Ammunition` - an `equipment` item representing the **ammunition** required by a **weapon**. Should be equipped before using the **weapon**. Can have a quantity.
-* `Armor`      - an `equipment` item representing any **armor** a unit can equip.
-* `Magic`      - a *knowledge* that a unit can use as a `weapon` against the enemy or as a `modification` to modify/recover stats of friendly units or itself. Deals `DamageImpact` or `ModificationImpact`. Can only be used in the `Combat Phase`.
-* `Disposable` - any sort of "single-use" item. Can have a quantity. Deals `DamageImpact` or `ModificationImpact`. Can only be used in the `Combat Phase`.
-* `Provision`  - a *food* item. Can have a quantity. Deals `Recovery`. Can only be used in the `Resting Phase`.
+## 恢复（Recovery）
 
-## Math:
-* `Physical Damage / Resistance`: **Stabbing** + **Cutting** + **Crushing** + **Fire** + **Cold** + **Lightning** + **Acid**
-* `Attack chance`: (**unit agility** - **unit stress**) - (**target agility** - **target stress**) + **base chance** | minimum `1`, maximum `95`
-* `Attack chance` when `Stunned`: (**unit agility** - **unit stress**) + **target stress** + **base chance** | minimum `1`, maximum `95`
-* `Critical attack chance`: (**unit luck** - **unit stress**) - (**target luck** - **target stress**) | minimum `1`, maximum `95`
-* `Modification chance`: (**unit intelligence** - **unit stress**) + **base chance** | minimum `1`, maximum `100`
-* `Stun Chance`: ((**physical damage** - **unit stress**) - (**target physique** - **target stress**)) * **100** / max(**100**, **target health**) | minimum `1`, maximum `95`
-* `Retreat Chance`: **unit stress** | minimum `0`, maximum `95`
-* `Critical Miss Chance`: **unit stress** | minimum `0`, maximum `95`
+* `State`：恢复当前状态中的参数。
+* `Damage`：减少已累积的伤害影响。
 
-## Game Phases
-* `Prepare Unit Phase` *(prepareUnit)* - Unit can be placed in any available position before the battle starts. Only `Equip` and `Unequip` actions can be performed during this phase.
-* `Combat Phase` *(takeAction)*- During this phase, `Move`, `Use`, `Equip`, `Unequip`, `Wait`, or `Skip` actions can be performed while **action points** remain greater than or equal to **4**
-  * `Use` action - Can be performed with `weapon`, `magic`, and `disposable` items. Reduces required **action points**.
-  * `Move` action - Requires **4 action points**
-  * `Equip` or `Unequip` action - Can be performed with `equipment` at any time and requires no action points.
-  * `Wait` action - Moves the unit to the back of the queue and retains all unused action points.
-* `Resting Phase` *(spotComplete)* - During this phase, the `Use`, `Equip`, and `Unequip` actions can be performed. Players can also leave the session with a `Booty Share`.
+## 属性效果（Modification）
 
-## Mechanics:
-* `Critical Damage` - Doubles the damage.
-* `Critical Miss` - If a unit's attack misses and its `Stress` attribute is greater than zero, a `Critical Miss` check is performed. A unit may damage itself with double damage.
-* `Exhaustion` - Any `Instant Physical Damage` absorbed by a unit's equipment accumulates as `exhaustion` damage. However, it **cannot** be enhanced by the opponent's **intelligence** attribute. If a unit is hit while **totally exhausted** (stamina is zero), **critical damage** is dealt.
-* `Stun` - Any `Instant Physical Damage` can cause stun. When stunned, a unit loses its turn in the current round and appears at the end of the turn queue in the next round. If a unit is hit while stunned, **critical damage** is dealt and the **stun** is reset.
-* `Retreat` - If the `Stress` attribute is greater than zero, before each unit's turn the `Retreat` check is performed. A unit can miss its turn by moving to a corner of the battlefield.
-* `Equipment Wearout` - Each successful action followed by damage, or each action that requires ammunition, increases the `Wearout` of the unit's weapon, as well as the `Wearout` of the target's equipment. If the `Wearout` of an item reaches its `Durability`, the item can no longer be used and becomes unequipped.
+* `BaseAttributes`：修改单位的基础属性。
+* `Attributes`：修改单位的属性。
+* `Resistance`：修改单位的抗性。
+* `Damage`：修改单位能够造成的伤害。
+* `Recovery`：恢复单位状态。
+
+## 影响（Impact）
+
+* `duration`：效果持续时间；为零时立即生效。
+* `chance`：基础成功概率。
+
+## 伤害影响（DamageImpact）
+
+由 `Impact`（影响）和 `Damage`（伤害）组成。
+
+## 属性效果影响（ModificationImpact）
+
+由 `Impact`（影响）和 `Modification`（属性效果）组成。
+
+## 物品（Items）
+
+* `Weapon`（武器）：可装备物品（`equipment`）的一种，单位可装备它来攻击敌人。武器可能需要特定弹药（`ammunition`），产生 `DamageImpact`，只能在战斗阶段（`Combat Phase`）使用。
+* `Ammunition`（弹药）：武器所需的可装备物品。使用武器前应先装备弹药；弹药可以具有数量。
+* `Armor`（护甲）：单位可以装备的各类防具。
+* `Magic`（魔法）：单位掌握的知识，可像武器一样攻击敌人，也可通过属性效果修改或恢复自己、友方单位的属性。产生 `DamageImpact` 或 `ModificationImpact`，只能在战斗阶段使用。
+* `Disposable`（消耗品）：各类一次性使用物品，可以具有数量。产生 `DamageImpact` 或 `ModificationImpact`，只能在战斗阶段使用。
+* `Provision`（食物）：可以具有数量的食品，产生 `Recovery`，只能在休息阶段（`Resting Phase`）使用。
+
+## 计算规则
+
+* 物理伤害／抗性：穿刺 + 斩击 + 钝击 + 火焰 + 寒冷 + 闪电 + 酸蚀。
+* 攻击命中率：（自身敏捷 − 自身压力）−（目标敏捷 − 目标压力）+ 基础成功概率；最小值为 `1`，最大值为 `95`。
+* 目标眩晕时的攻击命中率：（自身敏捷 − 自身压力）+ 目标压力 + 基础成功概率；最小值为 `1`，最大值为 `95`。
+* 暴击概率：（自身幸运 − 自身压力）−（目标幸运 − 目标压力）；最小值为 `1`，最大值为 `95`。
+* 属性效果成功率：（自身智力 − 自身压力）+ 基础成功概率；最小值为 `1`，最大值为 `100`。
+* 眩晕概率：（（物理伤害 − 自身压力）−（目标体质 − 目标压力））× `100` ÷ max（`100`，目标生命值）；最小值为 `1`，最大值为 `95`。
+* 撤退概率：自身压力；最小值为 `0`，最大值为 `95`。
+* 严重失误概率：自身压力；最小值为 `0`，最大值为 `95`。
+
+## 游戏阶段
+
+* 单位准备阶段（`Prepare Unit Phase`，阶段值 `prepareUnit`）：战斗开始前，可将单位放在任一可用位置。此阶段只能执行装备（`Equip`）与卸下（`Unequip`）操作。
+* 战斗阶段（`Combat Phase`，阶段值 `takeAction`）：行动点大于等于 `4` 时，可执行移动（`Move`）、使用（`Use`）、装备（`Equip`）、卸下（`Unequip`）、等待（`Wait`）或跳过（`Skip`）。
+  * 使用：可使用武器、魔法与消耗品，扣除对应的行动点消耗。
+  * 移动：消耗 `4` 点行动点。
+  * 装备与卸下：随时可对装备执行，不消耗行动点。
+  * 等待：单位移动到行动队列末尾，保留所有未使用的行动点。
+* 休息阶段（`Resting Phase`，阶段值 `spotComplete`）：可执行使用、装备与卸下操作。玩家也可以领取自己的一份战利品（`Booty Share`）后离开会话。
+
+## 游戏机制
+
+* 暴击伤害（`Critical Damage`）：伤害翻倍。
+* 严重失误（`Critical Miss`）：单位攻击未命中且压力大于零时，会进行严重失误判定；单位可能对自己造成双倍伤害。
+* 疲劳（`Exhaustion`）：装备吸收的即时物理伤害会累积为疲劳伤害，消耗体力，但这部分伤害不能由对手的智力增强。单位完全力竭（体力为零）时受到攻击，会承受暴击伤害。
+* 眩晕（`Stun`）：任何即时物理伤害都可能造成眩晕。眩晕单位失去本轮行动机会，下一轮位于行动队列末尾。眩晕中受到攻击会承受暴击伤害，并解除眩晕。
+* 撤退（`Retreat`）：压力大于零时，每次单位行动前会进行撤退判定。单位可能移动到战场角落，并失去本次行动机会。
+* 装备磨损（`Equipment Wearout`）：成功造成伤害或需要弹药的行动，会增加自身武器以及目标装备的磨损（`Wearout`）。物品磨损达到耐久上限（`Durability`）时，将无法继续使用并自动卸下。

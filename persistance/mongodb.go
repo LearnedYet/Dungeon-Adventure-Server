@@ -40,7 +40,7 @@ func (db *MongoDB) connect() {
 	clientOptions := options.Client().ApplyURI(db.config.Uri)
 	client, err := mongo.Connect(ctx, clientOptions)
 	if err != nil {
-		log.Fatal("Mongodb: can't establish connection: ", err)
+		log.Fatal("MongoDB：无法建立连接：", err)
 	}
 	db.client = client
 }

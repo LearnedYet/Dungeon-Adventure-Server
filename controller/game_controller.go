@@ -65,24 +65,24 @@ func NewGameController(persistance *persistance.Persistance) *GameController {
 
 func (c *GameController) init() {
 	if err := c.itemsConfig.Load(ITEMS_CONFIG_PATH); err != nil {
-		log.Fatal("Unable to load items configuration: ", err)
+		log.Fatal("无法加载物品配置：", err)
 	}
 	if err := c.shop.LoadItems(SHOP_CONFIG_PATH, c.itemsConfig); err != nil {
-		log.Fatal("Unable to load shop configuration: ", err)
+		log.Fatal("无法加载商店配置：", err)
 	}
 	if err := c.quests.LoadItems(QUESTS_CONFIG_PATH, c.itemsConfig); err != nil {
-		log.Fatal("Unable to load quests configuration: ", err)
+		log.Fatal("无法加载任务配置：", err)
 	}
 	if err := c.mercenaries.LoadItems(MERCENARIES_CONFIG_PATH, c.itemsConfig); err != nil {
-		log.Fatal("Unable to load mercenaries configuration: ", err)
+		log.Fatal("无法加载佣兵配置：", err)
 	}
 	if err := c.unitsConfig.LoadUnits(UNITS_CONFIG_PATH, c.itemsConfig); err != nil {
-		log.Fatal("Unable to load units configuration: ", err)
+		log.Fatal("无法加载单位配置：", err)
 	}
 	if err := c.scenariosConfig.LoadScenarios(SCENARIO_CONFIG_PATH, c.unitsConfig); err != nil {
-		log.Fatal("Unable to load scenarios configuration: ", err)
+		log.Fatal("无法加载场景配置：", err)
 	}
 	if err := c.employment.Load(JOBS_CONFIG_PATH); err != nil {
-		log.Fatal("Unable to load jobs configuration: ", err)
+		log.Fatal("无法加载工作配置：", err)
 	}
 }

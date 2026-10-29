@@ -120,10 +120,10 @@ func (h *Hub) serveWsRequest(w http.ResponseWriter, r *http.Request) {
 	}
 	conn, err := h.upgrader.Upgrade(w, r, nil)
 	if err != nil {
-		log.Error("Can't serve ws request:", err)
+		log.Error("无法处理 WebSocket 请求：", err)
 		return
 	}
-	log.Info("Connection established: ", util.GetIP(r))
+	log.Info("连接已建立：", util.GetIP(r))
 	credentials := &controller.JoinRequestData{
 		Token:     auth.AuthenticationToken(token),
 		SessionId: users.UserSessionId(sessionId),
@@ -144,23 +144,23 @@ func (h *Hub) registerClient(client *Client) {
 		timer.Stop()
 		h.mu.Unlock()
 		h.controller.ConnectionStatusChanged(client.playerId, false)
-		log.Info("Client back online: ", client.Info())
+		log.Info("客户端重新上线：", client.Info())
 		return
 	}
 	h.mu.Unlock()
-	log.Info("Register Client: ", client.Info())
+	log.Info("注册客户端：", client.Info())
 }
 
 func (h *Hub) unregisterClient(client *Client) {
 	if client.playerId == engine.PlayerIdEmpty {
-		log.Info("Client failed to join: ", client.Info())
+		log.Info("客户端加入失败：", client.Info())
 		return
 	}
 	h.mu.Lock()
 	h.setupUserOfflineTimeout(client)
 	h.mu.Unlock()
 	h.controller.ConnectionStatusChanged(client.playerId, true)
-	log.Info("Client went offline: ", client.Info())
+	log.Info("客户端已离线：", client.Info())
 }
 
 func (h *Hub) setupUserOfflineTimeout(client *Client) {
@@ -174,7 +174,7 @@ func (h *Hub) setupUserOfflineTimeout(client *Client) {
 		delete(h.clients, client.playerId)
 		h.mu.Unlock()
 		h.controller.Leave(client.playerId)
-		log.Info("Unregister Client by timeout: ", client.Info())
+		log.Info("因超时注销客户端：", client.Info())
 	})
 }
 
