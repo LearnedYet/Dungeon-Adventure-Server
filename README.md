@@ -2,6 +2,16 @@
 
 使用 Go（Golang）实现的多人回合制角色扮演游戏服务端。
 
+## 在线试玩
+
+**[打开「地牢探险」汉化版](https://learnedyet.github.io/Dungeon-Adventure-Client/)**
+
+配套网页客户端：[Dungeon-Adventure-Client](https://github.com/LearnedYet/Dungeon-Adventure-Client)。
+
+2026 年 10 月 28 日已由维护者手动验证 Google 登录、实际游戏流程，以及同一账号重新登录后的角色和进度保留。
+
+当前为临时演示：网页托管在 GitHub Pages，Go 服务端与 MongoDB 运行在维护者的电脑上，通过临时隧道提供接口。电脑、网络、服务端、数据库及隧道需要保持运行，本机网络代理也影响 Google 登录。隧道重新建立后可能需要更新回调和前后端配置；其他 Google 账号仍可能受 OAuth 测试用户设置限制。
+
 
 ## 基础属性（BaseAttributes）
 
